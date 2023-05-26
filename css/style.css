@@ -1,0 +1,69 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* carosel */
+.owl-carousel .owl-nav button {
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.owl-carousel .owl-nav button span {
+ display: block;
+ width: 100%;
+ height: 100%;   
+}
+.owl-carousel .owl-nav button.owl-prev {
+    position: absolute;
+    top: 50%;
+    width: 60px;
+    height: 60px;
+    font-size: 50px;
+    color: white;
+    transform: translateY(-100%);
+}
+
+.owl-carousel .owl-nav button.owl-next {
+    position: absolute;
+    right: 0;
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    top: 50%;
+    font-size: 50px;
+    color: white;
+    transform: translateY(-100%);
+}
+
+.owl-carousel .owl-dots {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    display: flex;
+    gap: 10px;
+}
+
+.owl-carousel button.owl-dot {
+    background-color: white;
+    bottom: 20px;
+    font-size: 50px;
+    color: white;
+    width: 15px;
+    height: 15px;
+}
+
+.owl-carousel .owl-dots .active {
+    background-color: #60B301;
+}
+
+.banner-items {
+    font-family: 'Dancing Script';
+    text-shadow: 1px 1px black;
+}

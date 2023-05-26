@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
+    <script src="./js/tailwindcss.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500;1,700&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500;1,700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./font icons/fontawesome-free/css/all.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    </link>
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+    </link>
+    <title>Hoa Quả Sạch</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <header id="header" class="w-full bg-white shadow-md border-b-[1px]">
+        <div class="menu flex p-4 justify-between items-center  container mx-auto">
+            <div class="logo-menu flex items-center gap-20">
+                <a href="#">
+                    <img src="./images/logo.png" alt="logo" class="w-[95px] h-[55px] lg:w-[100px] lg:h-[60px]">
+                </a>
+                <div class="menu-item hidden lg:block">
+                    <nav>
+                        <ul class="flex gap-6">
+                            <li class="group">
+                                <a href="#"
+                                    class="text-textColor text-base font-bold group-hover:text-mainColor group-hover:border-b-2 group-hover:border-b-mainColor group-hover:pb-8">TRANG
+                                    CHỦ</a>
+                            </li>
+                            <li class="group">
+                                <a href="#"
+                                    class="text-textColor text-base font-bold group-hover:text-mainColor group-hover:border-b-2 group-hover:border-b-mainColor group-hover:pb-8">SẢN
+                                    PHẨM</a>
+                            </li>
+                            <li class="group">
+                                <a href="#"
+                                    class="text-textColor text-base font-bold group-hover:text-mainColor group-hover:border-b-2 group-hover:border-b-mainColor group-hover:pb-8">VỀ
+                                    CHÚNG TÔI</a>
+                            </li>
+                            <li class="group">
+                                <a href="#"
+                                    class="text-textColor text-base font-bold group-hover:text-mainColor group-hover:border-b-2 group-hover:border-b-mainColor group-hover:pb-8">TIN
+                                    TỨC</a>
+                            </li>
+                            <li class="group">
+                                <a href="#"
+                                    class="text-textColor text-base font-bold group-hover:text-mainColor group-hover:border-b-2 group-hover:border-b-mainColor group-hover:pb-8">LIÊN
+                                    HỆ</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+
+            <div class="menu-icon">
+                <ul class="flex gap-5 md:gap-8 items-center">
+                    <li class="flex items-center lg:border-b-mainColor lg:border-b-[1px]">
+                        <input type="text" value="Tìm kiếm ..."
+                            class="border-hidden focus:ring-transparent text-[13px] text-timKiem hidden lg:block">
+                        <img src="./images/timkiem.png" alt="" class="flex-shrink-0 w-5 h-5 cursor-pointer">
+                    </li>
+                    <li>
+                        <img src="./images/user.png" alt="" class="w-5 h-5 cursor-pointer">
+                    </li>
+                    <li>
+                        <img src="./images/giohang.png" alt="" class="w-5 h-5 cursor-pointer">
+                    </li>
+                    <li class="lg:hidden flex items-center">
+                        <i class="fa-solid fa-bars text-[22px]"></i>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <!-- End Header -->
+
+    <main id="main">
+        <div class="banner lg:max-h-[600px] lg:container mx-auto">
+            <div class="owl-carousel relative max-h-[600px]">
+                <div
+                    class="item lg:h-[600px] min-h-[350px] w-full bg-banner1 bg-cover bg-center bg-no-repeat flex gap-3 justify-center items-center flex-col pt-4">
+                    <p class="banner-items text-white text-[30px] font-medium lg:text-[50px]">Giảm <span
+                            class="text-mainColor text-[33px] lg:text-[55px]">15%</span> <br>
+                        cho đơn hàng từ 750K</p>
+                    <a href="#"
+                        class="text-white text-[16px] bg-mainColor px-4 py-1 rounded-md shadow animate-bounce">Mua
+                        Ngay</a>
+                </div>
+                <div
+                    class="item lg:h-[600px] min-h-[350px] w-full bg-banner2 bg-cover bg-center bg-no-repeat flex gap-3 justify-center items-center flex-col pt-4">
+                    <p class="banner-items text-white text-[30px] font-medium lg:text-[50px]">Giao hàng
+                        <span class="text-mainColor text-[33px] lg:text-[55px]">Miễn Phí</span> <br>
+                        trong nội thành
+                    </p>
+                    <a href="#"
+                        class="text-white text-[16px] bg-mainColor px-4 py-1 rounded-md shadow animate-bounce">Mua
+                        Ngay</a>
+                </div>
+                <div
+                    class="item lg:h-[600px] min-h-[350px] w-full bg-banner3 bg-cover bg-center bg-no-repeat flex gap-3 justify-center items-center flex-col pt-4">
+                    <p class="banner-items text-white text-[30px] font-medium lg:text-[50px]">Nhiều <span
+                            class="text-mainColor text-[33px] lg:text-[55px]">Ưu Đãi</span> <br>
+                        cho khách hàng mới</p>
+                    <a href="#"
+                        class="text-white text-[16px] bg-mainColor px-4 py-1 rounded-md shadow animate-bounce">Mua
+                        Ngay</a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="./js/index.js"></script>
+</body>
+
+</html>
