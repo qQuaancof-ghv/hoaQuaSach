@@ -33,7 +33,8 @@
     <!-- Header -->
     <header id="header" class="w-full bg-white shadow-md border-b-[1px]">
         <div class="menu flex p-4 justify-between items-center  container mx-auto">
-            <div class="logo-menu flex items-center gap-20">
+            <!-- Logo-NavBar -->
+            <div class="logo-menu flex items-center lg:gap-7 xl:gap-20">
                 <a href="#">
                     <img src="./images/logo.png" alt="logo" class="w-[95px] h-[55px] lg:w-[100px] lg:h-[60px]">
                 </a>
@@ -69,59 +70,158 @@
                     </nav>
                 </div>
             </div>
+            <!-- End Logo-NavBar -->
 
+            <!-- Icons Menu -->
             <div class="menu-icon">
                 <ul class="flex gap-5 md:gap-8 items-center">
                     <li class="flex items-center lg:border-b-mainColor lg:border-b-[1px]">
                         <input type="text" value="Tìm kiếm ..."
                             class="border-hidden focus:ring-transparent text-[13px] text-timKiem hidden lg:block">
-                        <img src="./images/timkiem.png" alt="" class="flex-shrink-0 w-5 h-5 cursor-pointer">
+                        <img src="./images/timkiem.png" alt=""
+                            class="flex-shrink-0 w-4 h-4 md:w-5 md:h-5 cursor-pointer">
                     </li>
                     <li>
-                        <img src="./images/user.png" alt="" class="w-5 h-5 cursor-pointer">
+                        <img src="./images/user.png" alt="" class="w-4 h-4 md:w-5 md:h-5 cursor-pointer">
                     </li>
                     <li>
-                        <img src="./images/giohang.png" alt="" class="w-5 h-5 cursor-pointer">
+                        <img src="./images/giohang.png" alt="" class="w-4 h-4 md:w-5 md:h-5 cursor-pointer">
                     </li>
                     <li class="lg:hidden flex items-center">
-                        <i class="fa-solid fa-bars text-[22px]"></i>
+                        <i class="fa-solid fa-bars text-[18px] text-mainColor md:text-[22px]"></i>
                     </li>
                 </ul>
             </div>
+            <!-- End Icons Menu -->
         </div>
     </header>
     <!-- End Header -->
 
+    <!-- Main -->
     <main id="main">
+
+        <!-- Banner -->
         <div class="banner lg:max-h-[600px] lg:container mx-auto">
             <div class="owl-carousel relative max-h-[600px]">
                 <div
-                    class="item lg:h-[600px] min-h-[350px] w-full bg-banner1 bg-cover bg-center bg-no-repeat flex gap-3 justify-center items-center flex-col pt-4">
-                    <p class="banner-items text-white text-[30px] font-medium lg:text-[50px]">Giảm <span
-                            class="text-mainColor text-[33px] lg:text-[55px]">15%</span> <br>
-                        cho đơn hàng từ 750K</p>
+                    class="item lg:h-[600px] min-h-[350px] w-full bg-banner1 bg-cover bg-center bg-no-repeat flex gap-3 justify-center items-center flex-col lg:pr-[37rem] xl:pr-[50rem] 2xl:pr-[65rem]">
+                    <div class="banner-items text-white text-[30px] font-medium lg:text-[40px]">
+                        <div class="text-center">
+                            <p class="">Giảm <span class="text-mainColor text-[33px] lg:text-[55px]">15%</span></p>
+                        </div>
+                        <p>cho đơn hàng từ 750K</p>
+                    </div>
                     <a href="#"
                         class="text-white text-[16px] bg-mainColor px-4 py-1 rounded-md shadow animate-bounce">Mua
                         Ngay</a>
                 </div>
                 <div
-                    class="item lg:h-[600px] min-h-[350px] w-full bg-banner2 bg-cover bg-center bg-no-repeat flex gap-3 justify-center items-center flex-col pt-4">
-                    <p class="banner-items text-white text-[30px] font-medium lg:text-[50px]">Giao hàng
-                        <span class="text-mainColor text-[33px] lg:text-[55px]">Miễn Phí</span> <br>
-                        trong nội thành
-                    </p>
+                    class="item lg:h-[600px] min-h-[350px] w-full bg-banner2 bg-cover bg-center bg-no-repeat flex gap-3 justify-center items-center flex-col lg:justify-start lg:pt-20 lg:pr-[37rem] xl:pr-[50rem] 2xl:pr-[65rem]">
+                    <div class="banner-items text-white text-[30px] font-medium lg:text-[40px]">
+                        <p> Giao hàng
+                            <span class="text-mainColor text-[33px] lg:text-[55px]">Miễn Phí</span>
+                        </p>
+                        <div class="text-center">
+                            <p>trong nội thành</p>
+                        </div>
+                    </div>
                     <a href="#"
                         class="text-white text-[16px] bg-mainColor px-4 py-1 rounded-md shadow animate-bounce">Mua
                         Ngay</a>
                 </div>
                 <div
-                    class="item lg:h-[600px] min-h-[350px] w-full bg-banner3 bg-cover bg-center bg-no-repeat flex gap-3 justify-center items-center flex-col pt-4">
-                    <p class="banner-items text-white text-[30px] font-medium lg:text-[50px]">Nhiều <span
-                            class="text-mainColor text-[33px] lg:text-[55px]">Ưu Đãi</span> <br>
-                        cho khách hàng mới</p>
+                    class="item lg:h-[600px] min-h-[350px] w-full bg-banner3 bg-cover bg-center bg-no-repeat flex gap-3 justify-center items-center flex-col lg:pr-[37rem] xl:pr-[50rem] 2xl:pr-[65rem]">
+                    <div class="banner-items text-white text-[30px] font-medium lg:text-[40px]">
+                        <div class="text-center">
+                            <p>Nhiều
+                                <span class="text-mainColor text-[33px] lg:text-[55px]">Ưu Đãi</span>
+                            </p>
+                        </div>
+                        <p>cho khách hàng mới</p>
+                    </div>
                     <a href="#"
                         class="text-white text-[16px] bg-mainColor px-4 py-1 rounded-md shadow animate-bounce">Mua
                         Ngay</a>
+                </div>
+            </div>
+        </div>
+        <!-- End Banner -->
+
+        <!-- Service - Quality -->
+        <div class="service grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-7 container mx-auto my-12 px-4 lg:px-0">
+            <div class="phone">
+                <div class="service-icon flex justify-center items-center">
+                    <img src="./images/phone.png" alt="phone" class="w-[40px] h-[40px] lg:w-[65px] lg:h-[65px]">
+                </div>
+                <div class="text-center my-3">
+                    <p class="text-mainColor text-[14px] lg:text-[22px] font-bold">24/7 Hỗ trợ trực tuyến</p>
+                </div>
+                <div class="text-center">
+                    <p class="text-[14px] font-normal lg:text-[18px]">Tổng đài trực tuyến luôn trả lời những thắc mắc và
+                        hướng dẫn sử dụng thực phẩm sạch</p>
+                </div>
+            </div>
+            <div class="phone">
+                <div class="service-icon flex justify-center items-center">
+                    <img src="./images/transport.png" alt="transport" class="w-[40px] h-[40px] lg:w-[65px] lg:h-[65px]">
+                </div>
+                <div class="text-center my-3">
+                    <p class="text-mainColor text-[14px] lg:text-[22px] font-bold">Vận chuyển nhanh chóng</p>
+                </div>
+                <div class="text-center">
+                    <p class="text-[14px] font-normal lg:text-[18px]">Vận chuyển nhanh chóng và miễn phí cho đơn hàng từ
+                        500K</p>
+                </div>
+            </div>
+            <div class="phone">
+                <div class="service-icon flex justify-center items-center">
+                    <img src="./images/quality.png" alt="quality" class="w-[40px] h-[40px] lg:w-[65px] lg:h-[65px]">
+                </div>
+                <div class="text-center my-3">
+                    <p class="text-mainColor text-[14px] lg:text-[22px] font-bold">Chất lượng sản phẩm</p>
+                </div>
+                <div class="text-center">
+                    <p class="text-[14px] font-normal lg:text-[18px]">Đảm bảo rau của quả luôn tươi xanh và sạch, theo
+                        chuẩn quốc tế ban hành</p>
+                </div>
+            </div>
+            <div class="phone">
+                <div class="service-icon flex justify-center items-center">
+                    <img src="./images/safe.png" alt="phone" class="w-[40px] h-[40px] lg:w-[65px] lg:h-[65px]">
+                </div>
+                <div class="text-center my-3">
+                    <p class="text-mainColor text-[14px] lg:text-[22px] font-bold">An toàn vệ sinh</p>
+                </div>
+                <div class="text-center">
+                    <p class="text-[14px] font-normal lg:text-[18px]">100% không chất bảo quản, thuốc trừ sâu và phân
+                        bón độc hại tránh gây tổn hại đến sức khỏe</p>
+                </div>
+            </div>
+        </div>
+        <!-- End Service - Quality -->
+
+        <!-- Product -->
+        <div class="product container mx-auto">
+            <div class="title-product">
+                <div class="text-center">
+                    <h1 class="title font-bold text-[23px] lg:text-[33px]">SẢN PHẨM CỦA CHÚNG TÔI</h1>
+                    <p class="border-b-2 border-mainColor w-[210px] lg:w-[313px] mx-auto mt-1"></p>
+                </div>
+                <div class="newproduct flex justify-center gap-7 my-12">
+                    <button class="bg-mainColor text-white text-[18px] px-5 py-2 font-bold rounded-md">Nổi Bật</button>
+                    <button class="bg-btn text-textColor text-[18px] px-5 py-2 font-bold rounded-md">Sản Phẩm Mới</button>
+                </div>
+            </div>
+
+            <!-- Danh sách sản phẩm -->
+            <div class="product-items">
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5">
+                    <div class="product-items-content">
+                        <div class="item-img">
+                            <img src="./images/item1.png" alt="">
+                        </div>
+                        
+                    </div>
                 </div>
             </div>
         </div>

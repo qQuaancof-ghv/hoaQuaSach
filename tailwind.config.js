@@ -11,7 +11,8 @@ module.exports = {
       colors: {
         mainColor: '#60B301',
         timKiem: '#BDBDBD',
-        textColor: '#464646'
+        textColor: '#464646',
+        btn: '#F2F2F2'
       },
       backgroundImage: {
         'banner1': "url('./images/banner1.jpg')",
