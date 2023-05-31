@@ -18,7 +18,8 @@ tailwind.config = {
         productTitle: '#3A3A3A',
         bdImg: '#E0E0E0',
         textKM: '#4B4B4B',
-        textBG: 'rgba(196, 196, 196, 0.51)'
+        textBG: 'rgba(196, 196, 196, 0.51)',
+        footerBG: '#353535'
       },
       backgroundImage: {
         'banner1': "url('./images/banner1.jpg')",
