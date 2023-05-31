@@ -76,3 +76,26 @@ body {
 .title {
     font-family: 'Dancing Script';
 }
+
+.product-items-content .item-img:hover .add-item {
+    background-color: rgba(196, 196, 196, 0.45);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.promotion-text::before {
+    content: '';
+    position: absolute;
+    top: 15px;
+    background-color: black;
+    width: 82px;
+    height: 2px;
+}
+
+.promotion-text-box {
+    text-shadow: 1px 1px black;
+}

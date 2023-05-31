@@ -102,13 +102,13 @@
     <main id="main">
 
         <!-- Banner -->
-        <div class="banner lg:max-h-[600px] lg:container mx-auto">
+        <div class="banner lg:max-h-[600px] container mx-auto">
             <div class="owl-carousel relative max-h-[600px]">
                 <div
                     class="item lg:h-[600px] min-h-[350px] w-full bg-banner1 bg-cover bg-center bg-no-repeat flex gap-3 justify-center items-center flex-col lg:pr-[37rem] xl:pr-[50rem] 2xl:pr-[65rem]">
                     <div class="banner-items text-white text-[30px] font-medium lg:text-[40px]">
                         <div class="text-center">
-                            <p class="">Giảm <span class="text-mainColor text-[33px] lg:text-[55px]">15%</span></p>
+                            <p>Giảm <span class="text-mainColor text-[33px] lg:text-[55px]">15%</span></p>
                         </div>
                         <p>cho đơn hàng từ 750K</p>
                     </div>
@@ -149,7 +149,7 @@
         <!-- End Banner -->
 
         <!-- Service - Quality -->
-        <div class="service grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-7 container mx-auto my-12 px-4 lg:px-0">
+        <div class="service grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-7 container mx-auto my-12 px-6 2xl:px-0">
             <div class="phone">
                 <div class="service-icon flex justify-center items-center">
                     <img src="./images/phone.png" alt="phone" class="w-[40px] h-[40px] lg:w-[65px] lg:h-[65px]">
@@ -162,7 +162,7 @@
                         hướng dẫn sử dụng thực phẩm sạch</p>
                 </div>
             </div>
-            <div class="phone">
+            <div class="transport">
                 <div class="service-icon flex justify-center items-center">
                     <img src="./images/transport.png" alt="transport" class="w-[40px] h-[40px] lg:w-[65px] lg:h-[65px]">
                 </div>
@@ -174,7 +174,7 @@
                         500K</p>
                 </div>
             </div>
-            <div class="phone">
+            <div class="quality">
                 <div class="service-icon flex justify-center items-center">
                     <img src="./images/quality.png" alt="quality" class="w-[40px] h-[40px] lg:w-[65px] lg:h-[65px]">
                 </div>
@@ -186,9 +186,9 @@
                         chuẩn quốc tế ban hành</p>
                 </div>
             </div>
-            <div class="phone">
+            <div class="safe">
                 <div class="service-icon flex justify-center items-center">
-                    <img src="./images/safe.png" alt="phone" class="w-[40px] h-[40px] lg:w-[65px] lg:h-[65px]">
+                    <img src="./images/safe.png" alt="safe" class="w-[40px] h-[40px] lg:w-[65px] lg:h-[65px]">
                 </div>
                 <div class="text-center my-3">
                     <p class="text-mainColor text-[14px] lg:text-[22px] font-bold">An toàn vệ sinh</p>
@@ -210,19 +210,510 @@
                 </div>
                 <div class="newproduct flex justify-center gap-7 my-12">
                     <button class="bg-mainColor text-white text-[18px] px-5 py-2 font-bold rounded-md">Nổi Bật</button>
-                    <button class="bg-btn text-textColor text-[18px] px-5 py-2 font-bold rounded-md">Sản Phẩm Mới</button>
+                    <button class="bg-btn text-textColor text-[18px] px-5 py-2 font-bold rounded-md">Sản Phẩm
+                        Mới</button>
                 </div>
             </div>
 
             <!-- Danh sách sản phẩm -->
-            <div class="product-items">
-                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5">
-                    <div class="product-items-content">
-                        <div class="item-img">
-                            <img src="./images/item1.png" alt="">
+            <div class="product-items mb-20 px-6 2xl:px-0">
+                <div
+                    class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 justify-center">
+                    <div
+                        class="product-items-content border-2 rounded-lg shadow-3xl lg:shadow-none lg:border-0 lg:rounded-none lg:border-b-2 border-mainColor">
+                        <div class="item-img group lg:border-[1px] lg:border-bdImg lg:rounded-[5px] py-10 relative">
+                            <img src="./images/item1.jpg" alt="" class="w-full">
+                            <div class="add-item hidden absolute lg:group-hover:block">
+                                <div class="flex gap-4 items-center absolute bottom-3 right-2">
+                                    <div>
+                                        <button
+                                            class="add-cart border-2 border-mainColor rounded-full py-1 px-2 bg-white">
+                                            <i class="fa-solid fa-cart-flatbed-suitcase text-[13px] text-textColor"></i>
+                                        </button>
+                                    </div>
+                                    <div>
+                                        <button
+                                            class="buy-now px-5 py-1 bg-white border-2 border-mainColor rounded-2xl text-sm">Mua
+                                            Ngay</button>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        
+
+                        <div class="py-4">
+                            <div class="text-center lg:text-left">
+                                <p class="font-bold text-[21px] lg:text-base text-productTitle">Táo Mỹ</p>
+                            </div>
+                            <div class="flex justify-center lg:justify-between items-center pt-1">
+                                <div class="hidden lg:block">
+                                    <p class="font-bold text-[14px] text-productText">Trái cây nhập khẩu</p>
+                                </div>
+                                <div>
+                                    <p class="font-bold text-[20px] text-mainColor">180,000 đ</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="flex justify-center items-center gap-5 mb-7 lg:mb-0 lg:hidden">
+                            <div>
+                                <button class="add-cart border-2 border-mainColor rounded-full py-1 px-2 bg-white">
+                                    <i class="fa-solid fa-cart-flatbed-suitcase text-[13px] text-textColor"></i>
+                                </button>
+                            </div>
+                            <div>
+                                <button
+                                    class="buy-now px-5 py-1 bg-mainColor text-white border-2 border-mainColor rounded-2xl text-sm">Mua
+                                    Ngay</button>
+                            </div>
+                        </div>
+
                     </div>
+
+                    <div
+                        class="product-items-content border-2 rounded-lg shadow-3xl lg:shadow-none lg:border-0 lg:rounded-none lg:border-b-2 border-mainColor">
+                        <div class="item-img group lg:border-[1px] lg:border-bdImg lg:rounded-[5px] py-10 relative">
+                            <img src="./images/item2.jpg" alt="" class="w-full">
+                            <div class="add-item hidden absolute lg:group-hover:block">
+                                <div class="flex gap-4 items-center absolute bottom-3 right-2">
+                                    <div>
+                                        <button
+                                            class="add-cart border-2 border-mainColor rounded-full py-1 px-2 bg-white">
+                                            <i class="fa-solid fa-cart-flatbed-suitcase text-[13px] text-textColor"></i>
+                                        </button>
+                                    </div>
+                                    <div>
+                                        <button
+                                            class="buy-now px-5 py-1 bg-white border-2 border-mainColor rounded-2xl text-sm">Mua
+                                            Ngay</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="py-4">
+                            <div class="text-center lg:text-left">
+                                <p class="font-bold text-[21px] lg:text-base text-productTitle">Cherry Mỹ</p>
+                            </div>
+                            <div class="flex justify-center lg:justify-between items-center pt-1">
+                                <div class="hidden lg:block">
+                                    <p class="font-bold text-[14px] text-productText">Trái cây nhập khẩu</p>
+                                </div>
+                                <div>
+                                    <p class="font-bold text-[20px] text-mainColor">540,000 đ</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="flex justify-center items-center gap-5 mb-7 lg:mb-0 lg:hidden">
+                            <div>
+                                <button class="add-cart border-2 border-mainColor rounded-full py-1 px-2 bg-white">
+                                    <i class="fa-solid fa-cart-flatbed-suitcase text-[13px] text-textColor"></i>
+                                </button>
+                            </div>
+                            <div>
+                                <button
+                                    class="buy-now px-5 py-1 bg-mainColor text-white border-2 border-mainColor rounded-2xl text-sm">Mua
+                                    Ngay</button>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div
+                        class="product-items-content border-2 rounded-lg shadow-3xl lg:shadow-none lg:border-0 lg:rounded-none lg:border-b-2 border-mainColor">
+                        <div class="item-img group lg:border-[1px] lg:border-bdImg lg:rounded-[5px] py-10 relative">
+                            <img src="./images/item3.jpg" alt="" class="w-full">
+                            <div class="add-item hidden absolute lg:group-hover:block">
+                                <div class="flex gap-4 items-center absolute bottom-3 right-2">
+                                    <div>
+                                        <button
+                                            class="add-cart border-2 border-mainColor rounded-full py-1 px-2 bg-white">
+                                            <i class="fa-solid fa-cart-flatbed-suitcase text-[13px] text-textColor"></i>
+                                        </button>
+                                    </div>
+                                    <div>
+                                        <button
+                                            class="buy-now px-5 py-1 bg-white border-2 border-mainColor rounded-2xl text-sm">Mua
+                                            Ngay</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="py-4">
+                            <div class="text-center lg:text-left">
+                                <p class="font-bold text-[21px] lg:text-base text-productTitle">Vải Thiều - Trung Quốc
+                                </p>
+                            </div>
+                            <div class="flex justify-center lg:justify-between items-center pt-1">
+                                <div class="hidden lg:block">
+                                    <p class="font-bold text-[14px] text-productText">Trái cây nhập khẩu</p>
+                                </div>
+                                <div>
+                                    <p class="font-bold text-[20px] text-mainColor">270,000 đ</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="flex justify-center items-center gap-5 mb-7 lg:mb-0 lg:hidden">
+                            <div>
+                                <button class="add-cart border-2 border-mainColor rounded-full py-1 px-2 bg-white">
+                                    <i class="fa-solid fa-cart-flatbed-suitcase text-[13px] text-textColor"></i>
+                                </button>
+                            </div>
+                            <div>
+                                <button
+                                    class="buy-now px-5 py-1 bg-mainColor text-white border-2 border-mainColor rounded-2xl text-sm">Mua
+                                    Ngay</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div
+                        class="product-items-content border-2 rounded-lg shadow-3xl lg:shadow-none lg:border-0 lg:rounded-none lg:border-b-2 border-mainColor">
+                        <div class="item-img group lg:border-[1px] lg:border-bdImg lg:rounded-[5px] py-10 relative">
+                            <img src="./images/item4.jpg" alt="" class="w-full">
+                            <div class="add-item hidden absolute lg:group-hover:block">
+                                <div class="flex gap-4 items-center absolute bottom-3 right-2">
+                                    <div>
+                                        <button
+                                            class="add-cart border-2 border-mainColor rounded-full py-1 px-2 bg-white">
+                                            <i class="fa-solid fa-cart-flatbed-suitcase text-[13px] text-textColor"></i>
+                                        </button>
+                                    </div>
+                                    <div>
+                                        <button
+                                            class="buy-now px-5 py-1 bg-white border-2 border-mainColor rounded-2xl text-sm">Mua
+                                            Ngay</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="py-4">
+                            <div class="text-center lg:text-left">
+                                <p class="font-bold text-[21px] lg:text-base text-productTitle">Xoài Myanmar</p>
+                            </div>
+                            <div class="flex justify-center lg:justify-between items-center pt-1">
+                                <div class="hidden lg:block">
+                                    <p class="font-bold text-[14px] text-productText">Trái cây nhập khẩu</p>
+                                </div>
+                                <div>
+                                    <p class="font-bold text-[20px] text-mainColor">250,000 đ</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="flex justify-center items-center gap-5 mb-7 lg:mb-0 lg:hidden">
+                            <div>
+                                <button class="add-cart border-2 border-mainColor rounded-full py-1 px-2 bg-white">
+                                    <i class="fa-solid fa-cart-flatbed-suitcase text-[13px] text-textColor"></i>
+                                </button>
+                            </div>
+                            <div>
+                                <button
+                                    class="buy-now px-5 py-1 bg-mainColor text-white border-2 border-mainColor rounded-2xl text-sm">Mua
+                                    Ngay</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div
+                        class="product-items-content border-2 rounded-lg shadow-3xl lg:shadow-none lg:border-0 lg:rounded-none lg:border-b-2 border-mainColor">
+                        <div class="item-img group lg:border-[1px] lg:border-bdImg lg:rounded-[5px] py-10 relative">
+                            <img src="./images/item5.jpg" alt="" class="w-full">
+                            <div class="add-item hidden absolute lg:group-hover:block">
+                                <div class="flex gap-4 items-center absolute bottom-3 right-2">
+                                    <div>
+                                        <button
+                                            class="add-cart border-2 border-mainColor rounded-full py-1 px-2 bg-white">
+                                            <i class="fa-solid fa-cart-flatbed-suitcase text-[13px] text-textColor"></i>
+                                        </button>
+                                    </div>
+                                    <div>
+                                        <button
+                                            class="buy-now px-5 py-1 bg-white border-2 border-mainColor rounded-2xl text-sm">Mua
+                                            Ngay</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="py-4">
+                            <div class="text-center lg:text-left">
+                                <p class="font-bold text-[21px] lg:text-base text-productTitle">Heathy Vitamin C</p>
+                            </div>
+                            <div class="flex justify-center lg:justify-between items-center pt-1">
+                                <div class="hidden lg:block">
+                                    <p class="font-bold text-[14px] text-productText">Gói chăm sóc sức khỏe</p>
+                                </div>
+                                <div>
+                                    <p class="font-bold text-[20px] text-mainColor">460,000 đ</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="flex justify-center items-center gap-5 mb-7 lg:mb-0 lg:hidden">
+                            <div>
+                                <button class="add-cart border-2 border-mainColor rounded-full py-1 px-2 bg-white">
+                                    <i class="fa-solid fa-cart-flatbed-suitcase text-[13px] text-textColor"></i>
+                                </button>
+                            </div>
+                            <div>
+                                <button
+                                    class="buy-now px-5 py-1 bg-mainColor text-white border-2 border-mainColor rounded-2xl text-sm">Mua
+                                    Ngay</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div
+                        class="product-items-content border-2 rounded-lg shadow-3xl lg:shadow-none lg:border-0 lg:rounded-none lg:border-b-2 border-mainColor">
+                        <div class="item-img group lg:border-[1px] lg:border-bdImg lg:rounded-[5px] py-10 relative">
+                            <img src="./images/item6.jpg" alt="" class="w-full">
+                            <div class="add-item hidden absolute lg:group-hover:block">
+                                <div class="flex gap-4 items-center absolute bottom-3 right-2">
+                                    <div>
+                                        <button
+                                            class="add-cart border-2 border-mainColor rounded-full py-1 px-2 bg-white">
+                                            <i class="fa-solid fa-cart-flatbed-suitcase text-[13px] text-textColor"></i>
+                                        </button>
+                                    </div>
+                                    <div>
+                                        <button
+                                            class="buy-now px-5 py-1 bg-white border-2 border-mainColor rounded-2xl text-sm">Mua
+                                            Ngay</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="py-4">
+                            <div class="text-center lg:text-left">
+                                <p class="font-bold text-[21px] lg:text-base text-productTitle">Dương Đào</p>
+                            </div>
+                            <div class="flex justify-center lg:justify-between items-center pt-1">
+                                <div class="hidden lg:block">
+                                    <p class="font-bold text-[14px] text-productText">Trái cây nhập khẩu</p>
+                                </div>
+                                <div>
+                                    <p class="font-bold text-[20px] text-mainColor">230,000 đ</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="flex justify-center items-center gap-5 mb-7 lg:mb-0 lg:hidden">
+                            <div>
+                                <button class="add-cart border-2 border-mainColor rounded-full py-1 px-2 bg-white">
+                                    <i class="fa-solid fa-cart-flatbed-suitcase text-[13px] text-textColor"></i>
+                                </button>
+                            </div>
+                            <div>
+                                <button
+                                    class="buy-now px-5 py-1 bg-mainColor text-white border-2 border-mainColor rounded-2xl text-sm">Mua
+                                    Ngay</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div
+                        class="product-items-content border-2 rounded-lg shadow-3xl lg:shadow-none lg:border-0 lg:rounded-none lg:border-b-2 border-mainColor">
+                        <div class="item-img group lg:border-[1px] lg:border-bdImg lg:rounded-[5px] py-10 relative">
+                            <img src="./images/item7.jpg" alt="" class="w-full">
+                            <div class="add-item hidden absolute lg:group-hover:block">
+                                <div class="flex gap-4 items-center absolute bottom-3 right-2">
+                                    <div>
+                                        <button
+                                            class="add-cart border-2 border-mainColor rounded-full py-1 px-2 bg-white">
+                                            <i class="fa-solid fa-cart-flatbed-suitcase text-[13px] text-textColor"></i>
+                                        </button>
+                                    </div>
+                                    <div>
+                                        <button
+                                            class="buy-now px-5 py-1 bg-white border-2 border-mainColor rounded-2xl text-sm">Mua
+                                            Ngay</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="py-4">
+                            <div class="text-center lg:text-left">
+                                <p class="font-bold text-[21px] lg:text-base text-productTitle">Bơ - Mexico</p>
+                            </div>
+                            <div class="flex justify-center lg:justify-between items-center pt-1">
+                                <div class="hidden lg:block">
+                                    <p class="font-bold text-[14px] text-productText">Trái cây nhập khẩu</p>
+                                </div>
+                                <div>
+                                    <p class="font-bold text-[20px] text-mainColor">160,000 đ</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="flex justify-center items-center gap-5 mb-7 lg:mb-0 lg:hidden">
+                            <div>
+                                <button class="add-cart border-2 border-mainColor rounded-full py-1 px-2 bg-white">
+                                    <i class="fa-solid fa-cart-flatbed-suitcase text-[13px] text-textColor"></i>
+                                </button>
+                            </div>
+                            <div>
+                                <button
+                                    class="buy-now px-5 py-1 bg-mainColor text-white border-2 border-mainColor rounded-2xl text-sm">Mua
+                                    Ngay</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div
+                        class="product-items-content border-2 rounded-lg shadow-3xl lg:shadow-none lg:border-0 lg:rounded-none lg:border-b-2 border-mainColor">
+                        <div class="item-img group lg:border-[1px] lg:border-bdImg lg:rounded-[5px] py-10 relative">
+                            <img src="./images/item8.jpg" alt="" class="w-full">
+                            <div class="add-item hidden absolute lg:group-hover:block">
+                                <div class="flex gap-4 items-center absolute bottom-3 right-2">
+                                    <div>
+                                        <button
+                                            class="add-cart border-2 border-mainColor rounded-full py-1 px-2 bg-white">
+                                            <i class="fa-solid fa-cart-flatbed-suitcase text-[13px] text-textColor"></i>
+                                        </button>
+                                    </div>
+                                    <div>
+                                        <button
+                                            class="buy-now px-5 py-1 bg-white border-2 border-mainColor rounded-2xl text-sm">Mua
+                                            Ngay</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="py-4">
+                            <div class="text-center lg:text-left">
+                                <p class="font-bold text-[21px] lg:text-base text-productTitle">Thanh Long Vàng</p>
+                            </div>
+                            <div class="flex justify-center lg:justify-between items-center pt-1">
+                                <div class="hidden lg:block">
+                                    <p class="font-bold text-[14px] text-productText">Trái cây nhập khẩu</p>
+                                </div>
+                                <div>
+                                    <p class="font-bold text-[20px] text-mainColor">220,000 đ</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="flex justify-center items-center gap-5 mb-7 lg:mb-0 lg:hidden">
+                            <div>
+                                <button class="add-cart border-2 border-mainColor rounded-full py-1 px-2 bg-white">
+                                    <i class="fa-solid fa-cart-flatbed-suitcase text-[13px] text-textColor"></i>
+                                </button>
+                            </div>
+                            <div>
+                                <button
+                                    class="buy-now px-5 py-1 bg-mainColor text-white border-2 border-mainColor rounded-2xl text-sm">Mua
+                                    Ngay</button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <!-- End  Danh sách sản phẩm -->
+
+            <!-- Chương trình khuyến mãi -->
+            <div class="promotion px-6 2xl:px-0">
+                <div class="title-product">
+                    <div class="text-center">
+                        <h1 class="title font-bold text-[23px] lg:text-[33px]">CHƯƠNG TRÌNH KHUYẾN MÃI</h1>
+                        <p class="border-b-2 border-mainColor w-[210px] lg:w-[313px] mx-auto mt-1"></p>
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-7 my-14">
+                    <div class="promotion-box px-5 py-7 border-2 border-mainColor shadow-3xl">
+                        <div class="box-img lg:grid lg:grid-cols-2 lg:justify-center lg:items-center">
+                            <div class="flex justify-center">
+                                <img src="./images/boxKM.png" alt=""
+                                    class="max-h-[250px] max-w-[250px] xl:max-h-[320px] xl:max-w-[314px]">
+                            </div>
+                            <div class="text-center">
+                                <p class="text-[17px] text-textKM">Sầu riêng Musang King Malaysia (400 gm)</p>
+                                <div class="flex items-center justify-center gap-5 my-3 lg:mt-8">
+                                    <p class="promotion-text font-bold text-lg relative">650,000 đ</p>
+                                    <p class="text-mainColor text-[24px] font-bold">489,000 đ</p>
+                                </div>
+                                <div class="flex justify-center mt-5">
+                                    <button class="bg-mainColor py-2 px-5 text-white rounded-md">MUA NGAY</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div
+                        class="promotion-box border-2 border-mainColor bg-bannerKM bg-cover bg-center h-[300px] md:h-[400px] lg:h-full flex items-center">
+                        <div
+                            class="text-box-2 bg-textBG h-[100px] sm:h-[120px] md:h-[140px] w-full flex justify-center items-center">
+                            <div class="promotion-text-box text-center">
+                                <p class="title text-white text-[25px] sm:text-[35px] xl:text-[44px] font-bold">
+                                    Giảm
+                                    <span class="text-mainColor">15%</span> cho đơn hàng
+                                </p>
+                                <p class="title text-white text-[26px] sm:text-[36px] xl:text-[45px] font-bold">
+                                    từ 750K
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--End Chương trình khuyến mãi -->
+        </div>
+
+        <!-- Banner Form -->
+        <div
+            class="bg-bannerMain bg-cover bg-center bg-no-repeat mb-20 h-[211px] w-full flex items-center justify-center">
+            <div class="main-form lg:flex lg:justify-center lg:items-center w-full container mx-auto px-6 sm:px-20">
+                <div>
+                    <input type="text" value="Đăng ký nhận bản tin của chúng tôi"
+                        class="border-none text-black lg:text-center font-normal w-full lg:w-[445px] focus:ring-1 focus:ring-yellow-400 focus:rounded-md">
+                </div>
+                <div class="mt-3 lg:mt-0">
+                    <button class="bg-mainColor text-white px-6 py-2 w-full">ĐĂNG KÝ</button>
+                </div>
+            </div>
+        </div>
+        <!--End Banner Form -->
+
+        <!-- Thương Hiệu -->
+        <div class="trademark container mx-auto px-6">
+            <div class="title-product mb-12">
+                <div class="text-center">
+                    <h1 class="title font-bold text-[23px] lg:text-[33px]">CHUYỆN VỀ THƯƠNG HIỆU HOA QUẢ SẠCH</h1>
+                    <p class="border-b-2 border-mainColor w-[210px] lg:w-[313px] mx-auto mt-1"></p>
+                </div>
+            </div>
+            <div>
+                <p class="text-center font-normal text-lg lg:text-xl">
+                    Hoa Quả Sạch khởi nguồn từ đam mê thưởng thức tất cả trái cây hảo hạng nhất, độc đáo nhất trong và
+                    ngoài nước. Từ khởi đầu khiêm tốn tại một cửa hàng nhỏ với một vài sản phẩm, Hoa Quả Sạch ngày nay
+                    đã và đang trên đà phát triển mạnh mẽ với đa dạng chủng loại trái cây nhập khẩu và hoa quả Việt Nam
+                    tươi ngon, tiêu chuẩn xuất khẩu.
+                </p>
+                <p class="my-4 text-center font-normal text-lg lg:text-xl">
+                    Chúng tôi rất hạnh phúc và tự hào với kinh nghiệm 05 năm mang đến những sản phẩm chất lượng cao cấp
+                    và trải nghiệm mua sắm độc đáo cho khách hàng.
+                </p>
+            </div>
+            <div class="flex justify-center my-8">
+                <button class="bg-mainColor text-white py-3 px-5 rounded-md font-normal text-base">Khám Phá Thêm</button>
+            </div>
+        </div>
+        <!--End Thương Hiệu -->
+
+        <!-- Tin Tức -->
+        <div class="handbook">
+            <div class="title-product my-12">
+                <div class="text-center">
+                    <h1 class="title font-bold text-[23px] lg:text-[33px]">TIN TỨC - CẨM NANG</h1>
+                    <p class="border-b-2 border-mainColor w-[210px] lg:w-[313px] mx-auto mt-1"></p>
                 </div>
             </div>
         </div>
