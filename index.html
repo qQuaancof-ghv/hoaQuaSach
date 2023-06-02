@@ -35,8 +35,8 @@
 
 <body>
     <!-- Header -->
-    <header id="header" class="w-full bg-white shadow-md border-b-[1px]">
-        <div class="menu flex p-4 justify-between items-center  container mx-auto">
+    <header id="header" class="w-full bg-white shadow-md border-b-[1px] fixed top-0 z-40 lg:relative">
+        <div class="menu flex p-4 justify-between items-center container mx-auto">
             <!-- Logo-NavBar -->
             <div class="logo-menu flex items-center lg:gap-7 xl:gap-20">
                 <a href="#">
@@ -105,7 +105,7 @@
     <main id="main">
 
         <!-- Banner -->
-        <div class="banner lg:max-h-[600px] container mx-auto">
+        <div class="banner lg:max-h-[600px] container mx-auto mt-32 lg:mt-0">
             <div class="owl-carousel owl-one relative max-h-[600px]">
                 <div
                     class="item lg:h-[600px] min-h-[350px] w-full bg-banner1 bg-cover bg-center bg-no-repeat flex gap-3 justify-center items-center flex-col lg:pr-[37rem] xl:pr-[50rem] 2xl:pr-[65rem]">
@@ -785,57 +785,59 @@
     <!-- End Main -->
 
     <!-- Footer -->
-    <footer>
-        <div class="footer-banner mt-16 w-full">
-            <div class="bg-footerBG grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-7 lg:gap-5 p-9 lg:px-20">
-                <div class="logo">
-                    <div class="2xl:mr-14">
-                        <img src="./images/logo.png" alt="" class="w-[190px] h-[126px]">
-                        <p class="title font-bold text-[29px] text-mainColor">Sự lựa chọn hàng đầu cho sức khỏe của bạn
-                        </p>
+    <footer id="footer">
+        <div class="footer-banner mt-16 bg-footerBG">
+            <div class="p-10 xl:container xl:mx-auto">
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-7 lg:gap-5">
+                    <div class="logo xl:pr-6">
+                        <div>
+                            <img src="./images/logo.png" alt="" class="w-[190px] h-[126px]">
+                            <p class="title font-bold text-[29px] text-mainColor">Sự lựa chọn hàng đầu cho sức khỏe của bạn
+                            </p>
+                        </div>
                     </div>
-                </div>
-                <div class="footer-title">
-                    <div class="border-b-2 border-mainColor">
-                        <h4 class="text-white font-bold text-xl pb-3">LIÊN KẾT NHANH</h4>
+                    <div class="footer-title">
+                        <div class="border-b-2 border-mainColor">
+                            <h4 class="text-white font-bold text-xl pb-3">LIÊN KẾT NHANH</h4>
+                        </div>
+                        <nav class="mt-3">
+                            <ul class="text-white font-normal text-[17px] leading-8">
+                                <li><a href="#" class="hover:text-hvFooter">Trang chủ</a></li>
+                                <li><a href="#" class="hover:text-hvFooter">Sản phẩm</a></li>
+                                <li><a href="#" class="hover:text-hvFooter">Về chúng tôi</a></li>
+                                <li><a href="#" class="hover:text-hvFooter">Tin tức</a></li>
+                                <li><a href="#" class="hover:text-hvFooter">Liên hệ</a></li>
+                                <li><a href="#" class="hover:text-hvFooter">About this Website</a></li>
+                            </ul>
+                        </nav>
                     </div>
-                    <nav class="mt-3">
-                        <ul class="text-white font-normal text-[17px] leading-8">
-                            <li><a href="#">Trang chủ</a></li>
-                            <li><a href="#">Sản phẩm</a></li>
-                            <li><a href="#">Về chúng tôi</a></li>
-                            <li><a href="#">Tin tức</a></li>
-                            <li><a href="#">Liên hệ</a></li>
-                            <li><a href="#">About this Website</a></li>
-                        </ul>
-                    </nav>
-                </div>
-                <div class="footer-title">
-                    <div class="border-b-2 border-mainColor">
-                        <h4 class="text-white font-bold text-xl pb-3">CHĂM SÓC KHÁCH HÀNG</h4>
+                    <div class="footer-title">
+                        <div class="border-b-2 border-mainColor">
+                            <h4 class="text-white font-bold text-xl pb-3">CHĂM SÓC KHÁCH HÀNG</h4>
+                        </div>
+                        <nav class="mt-3">
+                            <ul class="text-white font-normal text-[17px] leading-8">
+                                <li><a href="#" class="hover:text-hvFooter">Hướng dẫn mua hàng</a></li>
+                                <li><a href="#" class="hover:text-hvFooter">Điều khoản dịch vụ của chúng tôi</a></li>
+                                <li><a href="#" class="hover:text-hvFooter">Chính sách giao hàng, đổi trả</a></li>
+                            </ul>
+                        </nav>
                     </div>
-                    <nav class="mt-3">
-                        <ul class="text-white font-normal text-[17px] leading-8">
-                            <li><a href="#">Hướng dẫn mua hàng</a></li>
-                            <li><a href="#">Điều khoản dịch vụ của chúng tôi</a></li>
-                            <li><a href="#">Chính sách giao hàng, đổi trả</a></li>
-                        </ul>
-                    </nav>
-                </div>
-                <div class="footer-title">
-                    <div class="border-b-2 border-mainColor">
-                        <h4 class="text-white font-bold text-xl pb-3">ĐỊA CHỈ CỬA HÀNG</h4>
-                    </div>
-                    <div class="text-white mt-3 leading-8">
-                        <p class="font-bold text-[18px]">HOA QUẢ SẠCH</p>
-                        <p class="text-[17px]">Địa chỉ: LK541 - DV14 - Đìa Lão - Kiến Hưng - Hà Đông - Hà Nội</p>
-                        <p class="text-[17px]">Điện thoại: 034 7942 704</p>
-                        <p class="text-[17px]">Email: phamngocquan1211@gmail.com</p>
-                        <div class="flex gap-10 mt-6">
-                            <a href="#"><img src="./images/facebook.png" alt=""></a>
-                            <a href="#"><img src="./images/twitter.png" alt=""></a>
-                            <a href="#"><img src="./images/youtube.png" alt=""></a>
-                            <a href="#"><img src="./images/instagram.png" alt=""></a>
+                    <div class="footer-title">
+                        <div class="border-b-2 border-mainColor">
+                            <h4 class="text-white font-bold text-xl pb-3">ĐỊA CHỈ CỬA HÀNG</h4>
+                        </div>
+                        <div class="text-white mt-3 leading-8">
+                            <p class="font-bold text-[18px]">HOA QUẢ SẠCH</p>
+                            <p class="text-[17px]">Địa chỉ: LK541 - DV14 - Đìa Lão - Kiến Hưng - Hà Đông - Hà Nội</p>
+                            <p class="text-[17px]">Điện thoại: 034 7942 704</p>
+                            <p class="text-[17px]">Email: phamngocquan1211@gmail.com</p>
+                            <div class="flex justify-center gap-5 mt-6">
+                                <a href="https://www.facebook.com/phamngocquan1211/" target="_blank"><img src="./images/facebook.png" alt=""></a>
+                                <a href="https://twitter.com/QuanPham1211" target="_blank"><img src="./images/twitter.png" alt=""></a>
+                                <a href="https://www.youtube.com/channel/UCNi7ZgDYYPnyEyUv2jEcS3Q" target="_blank"><img src="./images/youtube.png" alt=""></a>
+                                <a href="https://www.instagram.com/quanco56/" target="_blank"><img src="./images/instagram.png" alt=""></a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -843,7 +845,7 @@
         </div>
 
         <div class="bg-mainColor py-3 text-center">
-            <p class="text-white font-normal text-lg">Hoa Quả Sạch @ 2023</p>
+            <p class="text-white font-normal text-lg">Hoa Quả Sạch @ 2023 by QuanPham</p>
         </div>
     </footer>
     <!--End Footer -->

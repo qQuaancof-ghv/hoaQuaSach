@@ -19,7 +19,9 @@ module.exports = {
         bdImg: '#E0E0E0',
         textKM: '#4B4B4B',
         textBG: 'rgba(196, 196, 196, 0.51)',
-        footerBG: '#353535'
+        footerBG: '#353535',
+        hvFooter: '#CAD3C8'
+        
       },
       backgroundImage: {
         'banner1': "url('./images/banner1.jpg')",

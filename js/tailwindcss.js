@@ -19,7 +19,8 @@ tailwind.config = {
         bdImg: '#E0E0E0',
         textKM: '#4B4B4B',
         textBG: 'rgba(196, 196, 196, 0.51)',
-        footerBG: '#353535'
+        footerBG: '#353535',
+        hvFooter: '#CAD3C8'
       },
       backgroundImage: {
         'banner1': "url('./images/banner1.jpg')",
@@ -27,6 +28,7 @@ tailwind.config = {
         'banner3': "url('./images/banner3.jpg')",
         'bannerKM': "url('./images/item5.jpg')",
         'bannerMain': "url('./images/bannerMain.png')",
+       
       },
       boxShadow: {
         '3xl': '0px 4px 4px rgba(0, 0, 0, 0.25)',
