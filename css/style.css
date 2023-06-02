@@ -8,6 +8,28 @@ body {
     font-family: 'Open Sans', sans-serif;
 }
 
+/* Header */
+.active {
+    transform: translateX(100%);
+}
+
+.clone-mobile {
+    box-shadow: 1.2rem 1rem 3rem rgba(0, 0, 0, 0.03);
+    transition: transform 0.3s linear;
+    left: -65%;
+}
+
+.box-bg-menu {
+    background-color: rgb(235 230 230 / 60%);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 40;
+}
+
+
 /* carosel */
 .owl-one.owl-carousel .owl-nav button {
     width: 60px;
