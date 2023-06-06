@@ -8,7 +8,7 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
     <script src="./js/tailwindcss.js"></script>
-    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="shortcut icon" href="./images/logo.png" type="image/x-icon">
@@ -46,29 +46,29 @@
                     <div class="menu-item hidden lg:block">
                         <nav>
                             <ul class="flex gap-6">
-                                <li class="group">
-                                    <a href="#"
-                                        class="text-textColor text-base font-bold group-hover:text-mainColor group-hover:border-b-2 group-hover:border-b-mainColor group-hover:pb-8">TRANG
+                                <li>
+                                    <a href="./index.html"
+                                        class="text-base font-bold text-mainColor border-b-2 border-b-mainColor pb-8">TRANG
                                         CHỦ</a>
                                 </li>
-                                <li class="group">
-                                    <a href="#"
-                                        class="text-textColor text-base font-bold group-hover:text-mainColor group-hover:border-b-2 group-hover:border-b-mainColor group-hover:pb-8">SẢN
+                                <li>
+                                    <a href="./product.html"
+                                        class="text-textColor text-base font-bold hover:text-mainColor hover:border-b-2 hover:border-b-mainColor hover:pb-8">SẢN
                                         PHẨM</a>
                                 </li>
-                                <li class="group">
+                                <li>
                                     <a href="#"
-                                        class="text-textColor text-base font-bold group-hover:text-mainColor group-hover:border-b-2 group-hover:border-b-mainColor group-hover:pb-8">VỀ
+                                        class="text-textColor text-base font-bold hover:text-mainColor hover:border-b-2 hover:border-b-mainColor hover:pb-8">VỀ
                                         CHÚNG TÔI</a>
                                 </li>
-                                <li class="group">
+                                <li>
                                     <a href="#"
-                                        class="text-textColor text-base font-bold group-hover:text-mainColor group-hover:border-b-2 group-hover:border-b-mainColor group-hover:pb-8">TIN
+                                        class="text-textColor text-base font-bold hover:text-mainColor hover:border-b-2 hover:border-b-mainColor hover:pb-8">TIN
                                         TỨC</a>
                                 </li>
-                                <li class="group">
+                                <li>
                                     <a href="#"
-                                        class="text-textColor text-base font-bold group-hover:text-mainColor group-hover:border-b-2 group-hover:border-b-mainColor group-hover:pb-8">LIÊN
+                                        class="text-textColor text-base font-bold hover:text-mainColor hover:border-b-2 hover:border-b-mainColor hover:pb-8">LIÊN
                                         HỆ</a>
                                 </li>
                             </ul>
@@ -92,7 +92,7 @@
                         <li>
                             <img src="./images/giohang.png" alt="" class="w-4 h-4 md:w-5 md:h-5 cursor-pointer">
                         </li>
-                        <li class="lg:hidden flex items-center" onclick="menuTogger()">
+                        <li class="menu-toggle lg:hidden flex items-center">
                             <i class="fa-solid fa-bars text-[18px] text-mainColor md:text-[22px]"></i>
                         </li>
                     </ul>
@@ -113,14 +113,14 @@
                     <nav>
                         <ul class="flex flex-col gap-7">
                             <li>
-                                <a href="#" class="mobile-items text-mainColor">
+                                <a href="./index.html" class="mobile-items text-mainColor">
                                     <i class="fa-solid fa-house-chimney"></i>
                                     <span class="text-base font-bold">TRANG
                                         CHỦ</span>
                                 </a>
                             </li>
                             <li>
-                                <a href="#" class="mobile-items text-textColor">
+                                <a href="./product.html" class="mobile-items text-textColor">
                                     <i class="fa-solid fa-seedling"></i>
                                     <span class="text-base font-bold">SẢN PHẨM</span>
                                 </a>
@@ -267,7 +267,7 @@
                 <div class="title-product">
                     <div class="text-center">
                         <h1 class="title font-bold text-[23px] lg:text-[33px]">SẢN PHẨM CỦA CHÚNG TÔI</h1>
-                        <span class="border-b-2 border-mainColor w-[210px] lg:w-[313px] mx-auto mt-1"></span>
+                        <p class="border-b-2 border-mainColor w-[210px] lg:w-[313px] mx-auto mt-1"></p>
                     </div>
                     <div class="newproduct flex justify-center gap-7 my-12">
                         <button class="bg-mainColor text-white text-[18px] px-5 py-2 font-bold rounded-md">Nổi
@@ -667,7 +667,7 @@
                     <div class="title-product">
                         <div class="text-center">
                             <h1 class="title font-bold text-[23px] lg:text-[33px]">CHƯƠNG TRÌNH KHUYẾN MÃI</h1>
-                            <span class="border-b-2 border-mainColor w-[210px] lg:w-[313px] mx-auto mt-1"></span>
+                            <p class="border-b-2 border-mainColor w-[210px] lg:w-[313px] mx-auto mt-1"></p>
                         </div>
                     </div>
 
@@ -732,7 +732,7 @@
                 <div class="title-product mb-12">
                     <div class="text-center">
                         <h1 class="title font-bold text-[23px] lg:text-[33px]">CHUYỆN VỀ THƯƠNG HIỆU HOA QUẢ SẠCH</h1>
-                        <span class="border-b-2 border-mainColor w-[210px] lg:w-[313px] mx-auto mt-1"></span>
+                        <p class="border-b-2 border-mainColor w-[210px] lg:w-[313px] mx-auto mt-1"></p>
                     </div>
                 </div>
                 <div>
@@ -765,7 +765,7 @@
                 <div class="title-product my-12">
                     <div class="text-center">
                         <h1 class="title font-bold text-[23px] lg:text-[33px]">TIN TỨC - CẨM NANG</h1>
-                        <span class="border-b-2 border-mainColor w-[210px] lg:w-[313px] mx-auto mt-1"></span>
+                        <p class="border-b-2 border-mainColor w-[210px] lg:w-[313px] mx-auto mt-1"></p>
                     </div>
                 </div>
                 <div class="px-6 mb-9 container mx-auto relative">
@@ -874,8 +874,8 @@
                             </div>
                             <nav class="mt-3">
                                 <ul class="text-white font-normal text-[17px] leading-8">
-                                    <li><a href="#" class="hover:text-hvFooter">Trang chủ</a></li>
-                                    <li><a href="#" class="hover:text-hvFooter">Sản phẩm</a></li>
+                                    <li><a href="./index.html" class="hover:text-hvFooter">Trang chủ</a></li>
+                                    <li><a href="./product.html" class="hover:text-hvFooter">Sản phẩm</a></li>
                                     <li><a href="#" class="hover:text-hvFooter">Về chúng tôi</a></li>
                                     <li><a href="#" class="hover:text-hvFooter">Tin tức</a></li>
                                     <li><a href="#" class="hover:text-hvFooter">Liên hệ</a></li>
@@ -931,6 +931,7 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
     <script src="./js/index.js"></script>
+    <script src="./js/script.js"></script>
 </body>
 
 </html>

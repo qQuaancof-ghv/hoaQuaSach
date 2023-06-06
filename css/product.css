@@ -1,0 +1,23 @@
+.btn-product {
+    font-family: 'Roboto', sans-serif;
+}
+
+[type='checkbox'] {
+    color: #60B301;
+}
+
+.fa-chevron-right {
+    transform: rotate(90deg);
+    transition: all 0.3s ease-in-out
+}
+
+.isOpen ~ .fa-chevron-right {
+    transform: rotate(-90deg);
+}
+
+.product__wraper {
+    overflow: hidden;
+    height: 0;
+    opacity: 0;
+    transition: all 0.3s ease-in-out;
+}

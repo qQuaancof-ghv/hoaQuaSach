@@ -28,7 +28,6 @@ tailwind.config = {
         'banner3': "url('./images/banner3.jpg')",
         'bannerKM': "url('./images/item5.jpg')",
         'bannerMain': "url('./images/bannerMain.png')",
-       
       },
       boxShadow: {
         '3xl': '0px 4px 4px rgba(0, 0, 0, 0.25)',
