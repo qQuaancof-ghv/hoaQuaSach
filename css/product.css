@@ -15,9 +15,23 @@
     transform: rotate(-90deg);
 }
 
+.product-header span i {
+    transform: rotate(-90deg);
+    transition: transform 0.3s ease-in-out;
+}
+
+.product-header span.isOpen i {
+    transform: rotate(90deg);
+}
+
 .product__wraper {
     overflow: hidden;
     height: 0;
     opacity: 0;
     transition: all 0.3s ease-in-out;
+}
+
+.product__wraper.isOpen {
+    height: auto;
+    opacity: 1;
 }
