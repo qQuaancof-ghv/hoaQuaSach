@@ -11,7 +11,7 @@
     transition: all 0.3s ease-in-out
 }
 
-.isOpen ~ .fa-chevron-right {
+.isOpen~.fa-chevron-right {
     transform: rotate(-90deg);
 }
 
@@ -34,4 +34,35 @@
 .product__wraper.isOpen {
     height: auto;
     opacity: 1;
+}
+
+/* owlCarousel */
+
+.owl-carousel .owl-nav button span {
+    font-size: 60px;
+    color: #60B301;
+    font-weight: 500;
+    border-radius: 100%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    width: 40px;
+}
+
+.owl-theme .owl-nav [class*=owl-]:hover {
+    background: none;
+    color: black;
+}
+
+.owl-carousel .owl-nav button.owl-prev {
+    position: absolute;
+    top: 140px;
+    left: -65px;
+}
+
+.owl-carousel .owl-nav button.owl-next {
+    position: absolute;
+    top: 140px;
+    right: -65px;
 }
