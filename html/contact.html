@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
+    <script src="../js/tailwindcss.js"></script>
+    <link rel="stylesheet" href="../font icons/fontawesome-free/css/all.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Roboto+Slab:wght@700&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500;1,700&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500;1,700&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="../images/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/product.css">
+    <title>Liên Hệ</title>
+</head>
+
+<body>
+    <!-- Header -->
+    <header id="header">
+        <section class="w-full bg-white shadow-md border-b-[1px] fixed top-0 z-40 lg:relative">
+            <div class="menu flex p-4 justify-between items-center container mx-auto">
+                <!-- Logo-NavBar -->
+                <div class="logo-menu flex items-center lg:gap-7 xl:gap-20">
+                    <a href="../product.html">
+                        <img src="../images/logo.png" alt="logo" class="w-[95px] h-[55px] lg:w-[100px] lg:h-[60px]" />
+                    </a>
+                    <div class="menu-item hidden lg:block">
+                        <nav>
+                            <ul class="flex gap-6">
+                                <li>
+                                    <a href="../index.html"
+                                        class="text-textColor text-base font-bold hover:text-mainColor hover:border-b-2 hover:border-b-mainColor hover:pb-8">TRANG
+                                        CHỦ</a>
+                                </li>
+                                <li>
+                                    <a href="../html/product.html"
+                                        class="text-textColor text-base font-bold hover:text-mainColor hover:border-b-2 hover:border-b-mainColor hover:pb-8">SẢN
+                                        PHẨM</a>
+                                </li>
+                                <li>
+                                    <a href="#"
+                                        class="text-textColor text-base font-bold hover:text-mainColor hover:border-b-2 hover:border-b-mainColor hover:pb-8">VỀ
+                                        CHÚNG TÔI</a>
+                                </li>
+                                <li>
+                                    <a href="#"
+                                        class="text-textColor text-base font-bold hover:text-mainColor hover:border-b-2 hover:border-b-mainColor hover:pb-8">TIN
+                                        TỨC</a>
+                                </li>
+                                <li>
+                                    <a href="../html/contact.html"
+                                        class="text-base font-bold text-mainColor border-b-2 border-b-mainColor pb-8">LIÊN
+                                        HỆ</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+                <!-- End Logo-NavBar -->
+
+                <!-- Icons Menu -->
+                <div class="menu-icon">
+                    <ul class="flex gap-5 md:gap-8 items-center">
+                        <li class="flex items-center lg:border-b-mainColor lg:border-b-[1px]">
+                            <input type="text" placeholder="Tìm kiếm ..."
+                                class="border-hidden focus:ring-transparent text-[13px] text-timKiem hidden lg:block" />
+                            <img src="../images/timkiem.png" alt=""
+                                class="flex-shrink-0 w-4 h-4 md:w-5 md:h-5 cursor-pointer" />
+                        </li>
+                        <li>
+                            <img src="../images/user.png" alt="" class="w-4 h-4 md:w-5 md:h-5 cursor-pointer" />
+                        </li>
+                        <li>
+                            <img src="../images/giohang.png" alt="" class="w-4 h-4 md:w-5 md:h-5 cursor-pointer" />
+                        </li>
+                        <li class="menu-toggle lg:hidden flex items-center">
+                            <i class="fa-solid fa-bars text-[18px] text-mainColor md:text-[22px]"></i>
+                        </li>
+                    </ul>
+                </div>
+                <!-- End Icons Menu -->
+            </div>
+        </section>
+        <!-- Menu Mobile -->
+
+        <section>
+            <div id="clone-mobile" class="clone-mobile fixed top-0 bg-white h-[100vh] w-[65%] z-50 lg:hidden">
+                <div class="logo flex items-center gap-7 pb-3 px-3 border-b-2 mt-7 mx-5">
+                    <img src="../images/logo.png" alt="" class="w-[80px] h-[40px]" />
+                    <h3 class="title text-mainColor font-bold text-lg sm:text-2xl">
+                        HOA QUẢ SẠCH
+                    </h3>
+                </div>
+                <div class="mx-5 my-10">
+                    <nav>
+                        <ul class="flex flex-col gap-7">
+                            <li>
+                                <a href="../index.html" class="mobile-items text-textColor">
+                                    <i class="fa-solid fa-house-chimney"></i>
+                                    <span class="text-base font-bold">TRANG CHỦ</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="../html/product.html" class="mobile-items text-textColor">
+                                    <i class="fa-solid fa-seedling"></i>
+                                    <span class="text-base font-bold">SẢN PHẨM</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="mobile-items text-textColor">
+                                    <i class="fa-solid fa-truck-fast"></i>
+                                    <span class="text-base font-bold">VỀ CHÚNG TÔI</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="mobile-items text-textColor">
+                                    <i class="fa-solid fa-newspaper"></i>
+                                    <span class="text-base font-bold">TIN TỨC</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="../html/contact.html" class="mobile-items text-mainColor">
+                                    <i class="fa-regular fa-id-card"></i>
+                                    <span class="text-base font-bold">LIÊN HỆ</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <div class="box-bg-menu hidden"></div>
+        </section>
+    </header>
+    <!-- End Header -->
+
+    <!--Main-->
+    <main>
+        <section class="container mx-auto mt-32 lg:mt-5">
+            <div class="contact-content btn-product mx-6">
+                <a href="#" class="font-bold text-lg text-textColor">Trang Chủ</a>
+                <div class="google-map my-8">
+                    <iframe class="w-full h-[380px]"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3726.037690597435!2d105.78975991135214!3d20.951001490363144!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135adb298ee59bd%3A0x699b8daf626f4564!2zTWlwZWMgS2nhur9uIEjGsG5nIEjDoCDEkMO0bmc!5e0!3m2!1svi!2s!4v1686200148461!5m2!1svi!2s"
+                        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                <div class="contact-items mb-9">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-7 lg:gap-0">
+                        <div class="item text-textColor leading-10">
+                            <h3 class="font-bold text-2xl">Thông Tin Liên Hệ</h3>
+                            <h4 class="font-bold title text-mainColor">HOA QUẢ SẠCH</h4>
+                            <p class="text-sm"><strong>Địa chỉ:</strong> LK541 - DV14 - Đìa Lão - Kiến Hưng - Hà Đông - Hà Nội</p>
+                            <p class="text-sm my-2"><strong>Điện thoại:</strong> 0347942704</p>
+                            <p class="text-sm"><strong>Email:</strong> phamngocquan1211@gmail.com</p>
+                        </div>
+                        <div class="item text-textColor">
+                            <h3 class="font-bold text-2xl">Góp Ý</h3>
+                            <p class="font-medium text-sm italic">Những ý kiến của bạn sẽ làm HOA QUẢ SẠCH ngày càng
+                                hoàn thiện hơn.</p>
+                            <form class="mt-4">
+                                <div class="mb-4 leading-10">
+                                    <label for="Email"><span class="italic font-medium">Email:</span> <span class="text-red-600">*</span></label> <br>
+                                    <input
+                                        class="w-full p-1 italic text-timKiem border-timKiem rounded-md focus:ring-1 focus:ring-yellow-400 focus:border-none"
+                                        type="text" placeholder="example@domain.com">
+                                </div>
+                                <div class="leading-10">
+                                    <label for="noi dung"><span class="italic font-medium">Nội dung:</span> <span class="text-red-600">*</span></label> <br>
+                                    <textarea name="note" cols="30" rows="5"
+                                        class="w-full italic text-timKiem border-timKiem rounded-md focus:ring-1 focus:ring-yellow-400 focus:border-none"
+                                        placeholder="Bạn muốn nói điều gì với chúng tôi"></textarea>
+                                </div>
+                            </form>
+                            <p class="italic font-medium text-base">
+                                <span class="text-red-600">*</span> Vui lòng nhập đầy đủ thông tin 
+                            </p>
+                            <div class="text-center mt-3">
+                                <button class="btn bg-mainColor rounded-md text-white italic text-[17px] py-1 px-7 font-medium">Gửi</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!--End Main-->
+
+    <footer>
+        <section id="footer">
+            <div class="footer-banner bg-footerBG">
+                <div class="p-10 xl:container xl:mx-auto">
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-7 lg:gap-5">
+                        <div class="logo xl:pr-6">
+                            <div>
+                                <img src="../images/logo.png" alt="" class="w-[190px] h-[126px]" />
+                                <p class="title font-bold text-[29px] text-mainColor">
+                                    Sự lựa chọn hàng đầu cho sức khỏe của bạn
+                                </p>
+                            </div>
+                        </div>
+                        <div class="footer-title">
+                            <div class="border-b-2 border-mainColor">
+                                <h4 class="text-white font-bold text-xl pb-3">
+                                    LIÊN KẾT NHANH
+                                </h4>
+                            </div>
+                            <nav class="mt-3">
+                                <ul class="text-white font-normal text-[17px] leading-8">
+                                    <li>
+                                        <a href="../index.html" class="hover:text-hvFooter">Trang chủ</a>
+                                    </li>
+                                    <li>
+                                        <a href="../html/product.html" class="hover:text-hvFooter">Sản phẩm</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="hover:text-hvFooter">Về chúng tôi</a>
+                                    </li>
+                                    <li><a href="#" class="hover:text-hvFooter">Tin tức</a></li>
+                                    <li><a href="../html/contact.html" class="hover:text-hvFooter">Liên hệ</a></li>
+                                    <li>
+                                        <a href="#" class="hover:text-hvFooter">About this Website</a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                        <div class="footer-title">
+                            <div class="border-b-2 border-mainColor">
+                                <h4 class="text-white font-bold text-xl pb-3">
+                                    CHĂM SÓC KHÁCH HÀNG
+                                </h4>
+                            </div>
+                            <nav class="mt-3">
+                                <ul class="text-white font-normal text-[17px] leading-8">
+                                    <li>
+                                        <a href="#" class="hover:text-hvFooter">Hướng dẫn mua hàng</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="hover:text-hvFooter">Điều khoản dịch vụ của chúng tôi</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="hover:text-hvFooter">Chính sách giao hàng, đổi trả</a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                        <div class="footer-title">
+                            <div class="border-b-2 border-mainColor">
+                                <h4 class="text-white font-bold text-xl pb-3">
+                                    ĐỊA CHỈ CỬA HÀNG
+                                </h4>
+                            </div>
+                            <div class="text-white mt-3 leading-8">
+                                <p class="font-bold text-[18px]">HOA QUẢ SẠCH</p>
+                                <p class="text-[17px]">
+                                    Địa chỉ: LK541 - DV14 - Đìa Lão - Kiến Hưng - Hà Đông - Hà
+                                    Nội
+                                </p>
+                                <p class="text-[17px]">Điện thoại: 034 7942 704</p>
+                                <p class="text-[17px]">Email: phamngocquan1211@gmail.com</p>
+                                <nav class="flex justify-center gap-5 mt-6">
+                                    <a href="https://www.facebook.com/phamngocquan1211/" target="_blank"><img
+                                            src="../images/facebook.png" alt="" /></a>
+                                    <a href="https://twitter.com/QuanPham1211" target="_blank"><img
+                                            src="../images/twitter.png" alt="" /></a>
+                                    <a href="https://www.youtube.com/channel/UCNi7ZgDYYPnyEyUv2jEcS3Q"
+                                        target="_blank"><img src="../images/youtube.png" alt="" /></a>
+                                    <a href="https://www.instagram.com/quanco56/" target="_blank"><img
+                                            src="../images/instagram.png" alt="" /></a>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-mainColor py-3 text-center">
+                <p class="text-white font-normal text-lg">
+                    Hoa Quả Sạch @ 2023 by QuanPham
+                </p>
+            </div>
+        </section>
+    </footer>
+
+    <script src="../js/home.js"></script>
+</body>
+
+</html>
