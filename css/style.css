@@ -9,7 +9,7 @@ body {
 }
 
 /* Header */
-.active {
+#clone-mobile.active {
     transform: translateX(100%);
 }
 
