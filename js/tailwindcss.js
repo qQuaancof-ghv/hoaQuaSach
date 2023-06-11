@@ -34,6 +34,12 @@ tailwind.config = {
         '3xl': '0px 4px 4px rgba(0, 0, 0, 0.25)',
         '4xl': '0px 1px 1px rgba(0, 0, 0, 0.25)'
       },
+      gridTemplateColumns: {
+        '13': '200px 1fr',
+        '13.5': '350px 1fr',
+        '14': '650px 1fr',
+        '15': '900px 1fr',
+      },
     }
   }
 }

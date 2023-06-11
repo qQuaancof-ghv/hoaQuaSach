@@ -10,7 +10,7 @@ module.exports = {
       },
       colors: {
         mainColor: '#60B301',
-        bdBox:'#78c225',
+        bdBox: '#78c225',
         timKiem: '#BDBDBD',
         textColor: '#464646',
         btn: '#F2F2F2',
@@ -22,7 +22,6 @@ module.exports = {
         footerBG: '#353535',
         hvFooter: '#CAD3C8',
         bgCart: '#fff'
-        
       },
       backgroundImage: {
         'banner1': "url('./images/banner1.jpg')",
@@ -34,6 +33,12 @@ module.exports = {
       boxShadow: {
         '3xl': '0px 4px 4px rgba(0, 0, 0, 0.25)',
         '4xl': '0px 1px 1px rgba(0, 0, 0, 0.25)'
+      },
+      gridTemplateColumns: {
+        '13': '200px 1fr',
+        '13.5': '350px 1fr',
+        '14': '650px 1fr',
+        '15': '1000px 1fr',
       },
     }
   }
