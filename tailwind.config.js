@@ -20,7 +20,8 @@ module.exports = {
         textKM: '#4B4B4B',
         textBG: 'rgba(196, 196, 196, 0.51)',
         footerBG: '#353535',
-        hvFooter: '#CAD3C8'
+        hvFooter: '#CAD3C8',
+        bgCart: '#fff'
         
       },
       backgroundImage: {
@@ -32,6 +33,7 @@ module.exports = {
       },
       boxShadow: {
         '3xl': '0px 4px 4px rgba(0, 0, 0, 0.25)',
+        '4xl': '0px 1px 1px rgba(0, 0, 0, 0.25)'
       },
     }
   }

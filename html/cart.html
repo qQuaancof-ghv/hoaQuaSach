@@ -25,7 +25,8 @@
     <link rel="shortcut icon" href="../images/logo.png" type="image/x-icon">
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/product.css">
-    <title>Liên Hệ</title>
+    <link rel="stylesheet" href="../css/cart.css">
+    <title>Giỏ Hàng</title>
 </head>
 
 <body>
@@ -63,7 +64,7 @@
                                 </li>
                                 <li>
                                     <a href="../html/contact.html"
-                                        class="text-base font-bold text-mainColor border-b-2 border-b-mainColor pb-8">LIÊN
+                                        class="text-textColor text-base font-bold hover:text-mainColor hover:border-b-2 hover:border-b-mainColor hover:pb-8">LIÊN
                                         HỆ</a>
                                 </li>
                             </ul>
@@ -85,7 +86,8 @@
                             <img src="../images/user.png" alt="" class="w-4 h-4 md:w-5 md:h-5 cursor-pointer" />
                         </li>
                         <li>
-                           <a href="../html/cart.html"><img src="../images/giohang.png" alt="" class="w-4 h-4 md:w-5 md:h-5 cursor-pointer" /></a>
+                            <a href="../html/cart.html"><img src="../images/giohang.png" alt=""
+                                    class="w-4 h-4 md:w-5 md:h-5 cursor-pointer" /></a>
                         </li>
                         <li class="menu-toggle lg:hidden flex items-center">
                             <i class="fa-solid fa-bars text-[18px] text-mainColor md:text-[22px]"></i>
@@ -133,7 +135,7 @@
                                 </a>
                             </li>
                             <li>
-                                <a href="../html/contact.html" class="mobile-items text-mainColor">
+                                <a href="../html/contact.html" class="mobile-items text-textColor">
                                     <i class="fa-regular fa-id-card"></i>
                                     <span class="text-base font-bold">LIÊN HỆ</span>
                                 </a>
@@ -147,49 +149,158 @@
     </header>
     <!-- End Header -->
 
-    <!--Main-->
+    <!-- Main -->
     <main>
-        <section class="container mx-auto mt-32 lg:mt-5">
-            <div class="contact-content btn-product mx-6">
-                <a href="#" class="font-bold text-lg text-textColor">Trang Chủ</a>
-                <div class="google-map my-8">
-                    <iframe class="w-full h-[380px]"
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3726.037690597435!2d105.78975991135214!3d20.951001490363144!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135adb298ee59bd%3A0x699b8daf626f4564!2zTWlwZWMgS2nhur9uIEjGsG5nIEjDoCDEkMO0bmc!5e0!3m2!1svi!2s!4v1686200148461!5m2!1svi!2s"
-                        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <section class="container mx-auto">
+            <div class="cart-content mx-6">
+                <div class="title text-center mt-32 lg:mt-20">
+                    <h1 class="font-bold text-[33px]">Giỏ Hàng</h1>
+                    <p class="border-b-2 border-mainColor w-[170px] mx-auto mt-1"></p>
                 </div>
-                <div class="contact-items mb-9">
-                    <div class="grid grid-cols-1 md:grid-cols-2 gap-7 lg:gap-0">
-                        <div class="item text-textColor leading-10">
-                            <h3 class="font-bold text-2xl">Thông Tin Liên Hệ</h3>
-                            <h4 class="font-bold title text-mainColor">HOA QUẢ SẠCH</h4>
-                            <p class="text-sm"><strong>Địa chỉ:</strong> LK541 - DV14 - Đìa Lão - Kiến Hưng - Hà Đông - Hà Nội</p>
-                            <p class="text-sm my-2"><strong>Điện thoại:</strong> 0347942704</p>
-                            <p class="text-sm"><strong>Email:</strong> phamngocquan1211@gmail.com</p>
+                <div class="cart-items my-16">
+                <div class="grid grid-cols-1 xl:grid-cols-2 gap-7 xl:gap-[70px]">
+                        <div class="cart-product btn-product">
+                            <div>
+                                <div class="flex items-center bg-bgCart shadow-4xl rounded-sm p-4">
+                                    <div class="md:w-[40%] font-medium">
+                                        <label class="checkbox flex items-center gap-3">
+                                            <input type="checkbox"
+                                                class="focus:ring-white focus:border-[1px] focus:text-mainColor text-mainColor rounded-sm">
+                                            <div class="text-mainColor">Sản Phẩm</div>
+                                        </label>
+                                    </div>
+                                    <div class="w-[20%] text-center text-mainColor font-medium hidden md:block">Giá
+                                    </div>
+                                    <div class="w-[20%] text-center text-mainColor font-medium hidden md:block">Số Lượng
+                                    </div>
+                                    <div class="w-[20%] text-center text-mainColor font-medium hidden md:block">Thành
+                                        Tiền</div>
+                                </div>
+
+                                <div class="mt-7 flex bg-bgCart shadow-4xl rounded-sm p-4">
+                                    <div class="flex items-center gap-3 md:w-[40%]">
+                                        <label class="checkbox flex items-center gap-3">
+                                            <input type="checkbox"
+                                                class="focus:ring-white focus:border-[1px] focus:text-mainColor text-mainColor rounded-sm">
+                                        </label>
+                                        <div class="flex gap-10 md:gap-3">
+                                            <img src="../images/chitietSP.png"
+                                                class="w-[90px] h-[90px] border-[1px] border-timKiem">
+                                            <div class="md:mt-3">
+                                                <div>
+                                                    <p class="text-base md:text-sm font-medium">Táo Xanh Mỹ</p>
+                                                    <span class="font-bold text-lg text-mainColor md:hidden">256,000 VND</span>
+                                                </div>
+                                                <div class="mt-2 md:hidden">
+                                                    <span class="text-textColor border-[1px] border-timKiem rounded-md">
+                                                        <span class="increase text-sm px-2 hover:text-mainColor">
+                                                            <i class="fas fa-minus"></i>
+                                                        </span>
+                                                        <span
+                                                            class="number px-4 font-bold text-sm border-x-[1px] border-timKiem">1</span>
+                                                        <span class="reduce text-sm px-2 hover:text-mainColor">
+                                                            <i class="fas fa-plus"></i>
+                                                        </span>
+                                                    </span>
+                                                </div>
+                                                <button class="mt-2 hidden md:block">
+                                                    <i class="fa-regular fa-trash-can"></i>
+                                                    <span class="text-sm ml-1">Xóa</span>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="w-[20%] text-center font-normal mt-3 hidden md:block">256,000 VND</div>
+                                    <div class="w-[20%] text-center font-normal mt-3 hidden md:block">
+                                        <span class="text-textColor border-[1px] border-timKiem rounded-md">
+                                            <span class="increase text-sm px-2 hover:text-mainColor">
+                                                <i class="fas fa-minus"></i>
+                                            </span>
+                                            <span
+                                                class="number px-4 font-bold text-sm border-x-[1px] border-timKiem">1</span>
+                                            <span class="reduce text-sm px-2 hover:text-mainColor">
+                                                <i class="fas fa-plus"></i>
+                                            </span>
+                                        </span>
+                                    </div>
+                                    <div class="w-[20%] text-center font-medium mt-3 hidden md:block">256,000 VND</div>
+                                </div>
+
+                                <div class="mt-4 flex bg-bgCart shadow-4xl rounded-sm p-4">
+                                    <div class="flex items-center gap-3 md:w-[40%]">
+                                        <label class="checkbox flex items-center gap-3">
+                                            <input type="checkbox"
+                                                class="focus:ring-white focus:border-[1px] focus:text-mainColor text-mainColor rounded-sm">
+                                        </label>
+                                        <div class="flex gap-10 md:gap-3">
+                                            <img src="../images/item2.jpg"
+                                                class="w-[90px] h-[90px] border-[1px] border-timKiem">
+                                            <div class="md:mt-3">
+                                                <div>
+                                                    <p class="text-base md:text-sm font-medium">Cherry Mỹ</p>
+                                                    <span class="font-bold text-lg text-mainColor md:hidden">540,000 VND</span>
+                                                </div>
+                                                <div class="mt-2 md:hidden">
+                                                    <span class="text-textColor border-[1px] border-timKiem rounded-md">
+                                                        <span class="increase text-sm px-2 hover:text-mainColor">
+                                                            <i class="fas fa-minus"></i>
+                                                        </span>
+                                                        <span
+                                                            class="number px-4 font-bold text-sm border-x-[1px] border-timKiem">1</span>
+                                                        <span class="reduce text-sm px-2 hover:text-mainColor">
+                                                            <i class="fas fa-plus"></i>
+                                                        </span>
+                                                    </span>
+                                                </div>
+                                                <button class="mt-2 hidden md:block">
+                                                    <i class="fa-regular fa-trash-can"></i>
+                                                    <span class="text-sm ml-1">Xóa</span>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="w-[20%] text-center font-normal mt-3 hidden md:block">540,000 VND</div>
+                                    <div class="w-[20%] text-center font-normal mt-3 hidden md:block">
+                                        <span class="text-textColor border-[1px] border-timKiem rounded-md">
+                                            <span class="increase text-sm px-2 hover:text-mainColor">
+                                                <i class="fas fa-minus"></i>
+                                            </span>
+                                            <span
+                                                class="number px-4 font-bold text-sm border-x-[1px] border-timKiem">1</span>
+                                            <span class="reduce text-sm px-2 hover:text-mainColor">
+                                                <i class="fas fa-plus"></i>
+                                            </span>
+                                        </span>
+                                    </div>
+                                    <div class="w-[20%] text-center font-medium mt-3 hidden md:block">540,000 VND</div>
+                                </div>
+                                <div class="flex xl:justify-end items-center gap-10 mt-5">
+                                    <a href="#" class="text-mainColor"> Quay lại</a>
+                                    <button href="#" class="bg-mainColor text-white rounded-md py-1 px-5 font-medium">Cập Nhật</button>
+                                </div>
+                            </div>
                         </div>
-                        <div class="item text-textColor">
-                            <h3 class="font-bold text-2xl">Góp Ý</h3>
-                            <p class="font-medium text-sm italic">Những ý kiến của bạn sẽ làm HOA QUẢ SẠCH ngày càng
-                                hoàn thiện hơn.</p>
-                            <form class="mt-4">
-                                <div class="mb-4 leading-10">
-                                    <label for="Email"><span class="italic font-medium">Email:</span> <span class="text-red-600">*</span></label> <br>
-                                    <input
-                                        class="w-full p-1 italic text-timKiem border-timKiem rounded-md focus:ring-1 focus:ring-yellow-400 focus:border-none"
-                                        type="text" placeholder="example@domain.com">
+
+                        <div class="cart-pay btn-product py-4 px-8 border-[1px] border-timKiem shadow-3xl">
+                            <h3 class="title border-b-2 border-bdBox text-xl text-center font-bold pb-1">CỘNG GIỎ HÀNG
+                            </h3>
+                            <div class="my-7">
+                                <div class="flex justify-between mb-3">
+                                    <p>Tạm Tính</p>
+                                    <span class="font-bold">796,000 VND</span>
                                 </div>
-                                <div class="leading-10">
-                                    <label for="noi dung"><span class="italic font-medium">Nội dung:</span> <span class="text-red-600">*</span></label> <br>
-                                    <textarea name="note" cols="30" rows="5"
-                                        class="w-full italic text-timKiem border-timKiem rounded-md focus:ring-1 focus:ring-yellow-400 focus:border-none"
-                                        placeholder="Bạn muốn nói điều gì với chúng tôi"></textarea>
+                                <div class="flex justify-between mb-10">
+                                    <p>Phí giao hàng</p>
+                                    <span class="font-bold">30,000 VND</span>
                                 </div>
-                            </form>
-                            <p class="italic font-medium text-base">
-                                <span class="text-red-600">*</span> Vui lòng nhập đầy đủ thông tin 
-                            </p>
-                            <div class="text-center mt-3">
-                                <button class="btn bg-mainColor rounded-md text-white italic text-[17px] py-1 px-7 font-medium">Gửi</button>
+                            </div>
+                            <div class="flex justify-between my-14">
+                                <p class="font-bold text-xl">Tổng</p>
+                                <span class="font-bold text-mainColor">826,000 VND</span>
+                            </div>
+                            <div class="text-center">
+                                <a href="#" class="bg-mainColor hover:bg-bdBox text-white px-5 py-2 rounded-md">Tiến
+                                    hành thanh toán</a>
                             </div>
                         </div>
                     </div>
@@ -294,7 +405,6 @@
             </div>
         </section>
     </footer>
-
     <script src="../js/home.js"></script>
 </body>
 
