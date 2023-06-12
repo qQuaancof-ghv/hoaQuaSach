@@ -26,8 +26,9 @@
         href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
     </link>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.5/flowbite.min.css" rel="stylesheet" />
-    <title>Hoa Quả Sạch</title>
+    <title>Tin Tức</title>
     <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/product.css">
 </head>
 
 <body>
@@ -45,7 +46,7 @@
                             <ul class="flex gap-6">
                                 <li>
                                     <a href="../index.html"
-                                        class="text-base font-bold text-mainColor border-b-2 border-b-mainColor pb-8">TRANG
+                                        class="text-textColor text-base font-bold hover:text-mainColor hover:border-b-2 hover:border-b-mainColor hover:pb-8">TRANG
                                         CHỦ</a>
                                 </li>
                                 <li>
@@ -60,7 +61,7 @@
                                 </li>
                                 <li>
                                     <a href="./blog.html"
-                                        class="text-textColor text-base font-bold hover:text-mainColor hover:border-b-2 hover:border-b-mainColor hover:pb-8">TIN
+                                        class="text-base font-bold text-mainColor border-b-2 border-b-mainColor pb-8">TIN
                                         TỨC</a>
                                 </li>
                                 <li>
@@ -153,7 +154,8 @@
 
     <!-- Main -->
     <main class="mt-[110px] lg:mt-0">
-        <div class="grid lg:grid-cols-3 gap-5 my-6 2xl:grid-cols-4 md:grid-cols-2 px-4 grid-cols-1 lg:container mx-auto">
+        <div
+            class="grid lg:grid-cols-3 gap-5 my-6 2xl:grid-cols-4 md:grid-cols-2 px-4 grid-cols-1 lg:container mx-auto">
 
             <div
                 class="w-full p-6 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
@@ -566,10 +568,10 @@
                             </div>
                             <nav class="mt-3">
                                 <ul class="text-white font-normal text-[17px] leading-8">
-                                    <li><a href="./index.html" class="hover:text-hvFooter">Trang chủ</a></li>
-                                    <li><a href="./html/product.html" class="hover:text-hvFooter">Sản phẩm</a></li>
-                                    <li><a href="./html/about.html" class="hover:text-hvFooter">Về chúng tôi</a></li>
-                                    <li><a href="./html/blog.html" class="hover:text-hvFooter">Tin tức</a></li>
+                                    <li><a href="../index.html" class="hover:text-hvFooter">Trang chủ</a></li>
+                                    <li><a href="../html/product.html" class="hover:text-hvFooter">Sản phẩm</a></li>
+                                    <li><a href="../html/about.html" class="hover:text-hvFooter">Về chúng tôi</a></li>
+                                    <li><a href="../html/blog.html" class="hover:text-hvFooter">Tin tức</a></li>
                                     <li><a href="./html/contact.html" class="hover:text-hvFooter">Liên hệ</a></li>
                                     <li><a href="#" class="hover:text-hvFooter">About this Website</a></li>
                                 </ul>
@@ -618,6 +620,9 @@
             </div>
         </section>
     </footer>
+    <!--End Footer -->
+
+    <!-- User toggle -->
     <div id="loginModal" tabindex="-1" aria-hidden="true"
         class="fixed top-0 left-0 right-0 z-50 hidden w-full p-4 overflow-x-hidden overflow-y-auto md:inset-0 h-[calc(100%-1rem)] max-h-full">
         <div class="relative w-full bg-white max-w-2xl max-h-full p-4 rounded-xl">
@@ -647,20 +652,20 @@
                         <label for="email"
                             class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Email</label>
                         <input type="email" id="email"
-                            class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-mainColor focus:border-mring-mainColor block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-mainColor dark:focus:border-mring-mainColor dark:shadow-sm-light"
+                            class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-1 focus:ring-mainColor focus:border-mainColor block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-mainColor dark:focus:border-mring-mainColor dark:shadow-sm-light"
                             placeholder="name@flowbite.com" required />
                     </div>
                     <div class="mb-4">
                         <label for="password" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Mật
                             khẩu</label>
                         <input type="password" id="password"
-                            class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-mainColor focus:border-mring-mainColor block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-mainColor dark:focus:border-mring-mainColor dark:shadow-sm-light"
+                            class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-1 focus:ring-mainColor focus:border-mainColor block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-mainColor dark:focus:border-mring-mainColor dark:shadow-sm-light"
                             required />
                     </div>
                     <div class="flex items-start mb-4">
                         <div class="flex items-center h-5">
                             <input id="terms" type="checkbox" value=""
-                                class="w-4 h-4 border border-gray-300 rounded bg-gray-50 focus:ring-transparent focus:ring-mainColor focus:bg-mainColor dark:bg-gray-700 dark:border-gray-600 dark:focus:ring-blue-600 dark:ring-offset-gray-800 dark:focus:ring-offset-gray-800"
+                                class="w-4 h-4 border border-gray-300 bg-gray-50 focus:ring-white focus:border-[1px] focus:text-mainColor text-mainColor rounded dark:bg-gray-700 dark:border-gray-600 dark:focus:ring-blue-600 dark:ring-offset-gray-800 dark:focus:ring-offset-gray-800"
                                 required />
                         </div>
                         <label for="terms" class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">Remember
@@ -676,14 +681,14 @@
                         <label for="email"
                             class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Email</label>
                         <input type="email" id="email"
-                            class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-mainColor focus:border-mring-mainColor block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-mainColor dark:focus:border-mring-mainColor dark:shadow-sm-light"
+                            class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-1 focus:ring-mainColor focus:border-mainColor block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-mainColor dark:focus:border-mring-mainColor dark:shadow-sm-light"
                             placeholder="name@flowbite.com" required />
                     </div>
                     <div class="mb-4">
                         <label for="password" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Mật
                             khẩu</label>
                         <input type="password" id="password"
-                            class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-mainColor focus:border-mring-mainColor block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-mainColor dark:focus:border-mring-mainColor dark:shadow-sm-light"
+                            class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-1 focus:ring-mainColor focus:border-mainColor block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-mainColor dark:focus:border-mring-mainColor dark:shadow-sm-light"
                             required />
                     </div>
                     <div class="mb-4">
@@ -691,13 +696,13 @@
                             class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Nhập lại mật
                             khẩu</label>
                         <input type="password" id="repeat-password"
-                            class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-mainColor focus:border-mring-mainColor block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-mainColor dark:focus:border-mring-mainColor dark:shadow-sm-light"
+                            class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-1 focus:ring-mainColor focus:border-mainColor block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-mainColor dark:focus:border-mring-mainColor dark:shadow-sm-light"
                             required />
                     </div>
                     <div class="flex items-start mb-4">
                         <div class="flex items-center h-5">
                             <input id="terms" type="checkbox" value=""
-                                class="w-4 h-4 border border-gray-300 rounded bg-gray-50 focus:ring-3 focus:ring-blue-300 dark:bg-gray-700 dark:border-gray-600 dark:focus:ring-blue-600 dark:ring-offset-gray-800 dark:focus:ring-offset-gray-800"
+                                class="w-4 h-4 border border-gray-300 bg-gray-50 focus:ring-white focus:border-[1px] focus:text-mainColor text-mainColor rounded dark:bg-gray-700 dark:border-gray-600 dark:focus:ring-blue-600 dark:ring-offset-gray-800 dark:focus:ring-offset-gray-800"
                                 required />
                         </div>
                         <label for="terms" class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">I agree
@@ -712,10 +717,10 @@
                     </button>
                 </form>
             </div>
-
         </div>
     </div>
-    <!--End Footer -->
+    <!--End User toggle -->
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.5/flowbite.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
     <script src="../js/index.js"></script>

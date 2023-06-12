@@ -82,8 +82,8 @@
                             <img src="../images/timkiem.png" alt=""
                                 class="flex-shrink-0 w-4 h-4 md:w-5 md:h-5 cursor-pointer" />
                         </li>
-                        <li>
-                            <img src="../images/user.png" alt="" class="w-4 h-4 md:w-5 md:h-5 cursor-pointer" />
+                        <li data-modal-target="loginModal" data-modal-toggle="loginModal">
+                            <img src="../images/user.png" alt="" class="w-4 h-4 md:w-5 md:h-5 cursor-pointer">
                         </li>
                         <li>
                             <a href="../html/cart.html"><img src="../images/giohang.png" alt=""
@@ -129,7 +129,7 @@
                                 </a>
                             </li>
                             <li>
-                                <a href="#" class="mobile-items text-textColor">
+                                <a href="../html/blog.html" class="mobile-items text-textColor">
                                     <i class="fa-solid fa-newspaper"></i>
                                     <span class="text-base font-bold">TIN TỨC</span>
                                 </a>
@@ -409,6 +409,107 @@
             </div>
         </section>
     </footer>
+
+    <!-- User toggle -->
+    <div id="loginModal" tabindex="-1" aria-hidden="true"
+        class="fixed top-0 left-0 right-0 z-50 hidden w-full p-4 overflow-x-hidden overflow-y-auto md:inset-0 h-[calc(100%-1rem)] max-h-full">
+        <div class="relative w-full bg-white max-w-2xl max-h-full p-4 rounded-xl">
+            <div class="mb-4 border-b border-gray-200 dark:border-gray-700">
+                <ul class="flex flex-wrap -mb-px text-sm font-medium text-center" id="myTab"
+                    data-tabs-toggle="#myTabContent" role="tablist">
+                    <li class="mr-2" role="presentation">
+                        <button
+                            class="inline-block p-4 border-b-2 rounded-t-lg aria-selected:text-mainColor aria-selected:border-mainColor"
+                            id="profile-tab" data-tabs-target="#profile" type="button" role="tab"
+                            aria-controls="profile" aria-selected="false">Đăng nhập</button>
+                    </li>
+                    <li class="mr-2" role="presentation">
+                        <button
+                            class="inline-block p-4 border-b-2 border-transparent rounded-t-lg aria-selected:text-mainColor aria-selected:border-mainColor hover:text-gray-600 hover:border-gray-300 dark:hover:text-gray-300"
+                            id="dashboard-tab" data-tabs-target="#dashboard" type="button" role="tab"
+                            aria-controls="dashboard" aria-selected="false">Đăng ký</button>
+                    </li>
+                </ul>
+            </div>
+
+
+            <!-- Modal content -->
+            <div id="myTabContent">
+                <form id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                    <div class="mb-4">
+                        <label for="email"
+                            class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Email</label>
+                        <input type="email" id="email"
+                            class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-1 focus:ring-mainColor focus:border-mainColor block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-mainColor dark:focus:border-mring-mainColor dark:shadow-sm-light"
+                            placeholder="name@flowbite.com" required />
+                    </div>
+                    <div class="mb-4">
+                        <label for="password" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Mật
+                            khẩu</label>
+                        <input type="password" id="password"
+                            class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-1 focus:ring-mainColor focus:border-mainColor block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-mainColor dark:focus:border-mring-mainColor dark:shadow-sm-light"
+                            required />
+                    </div>
+                    <div class="flex items-start mb-4">
+                        <div class="flex items-center h-5">
+                            <input id="terms" type="checkbox" value=""
+                                class="w-4 h-4 border border-gray-300 bg-gray-50 focus:ring-white focus:border-[1px] focus:text-mainColor text-mainColor rounded dark:bg-gray-700 dark:border-gray-600 dark:focus:ring-blue-600 dark:ring-offset-gray-800 dark:focus:ring-offset-gray-800"
+                                required />
+                        </div>
+                        <label for="terms" class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">Remember
+                            me</label>
+                    </div>
+                    <button type="submit"
+                        class="text-white bg-mainColor w-full md:w-auto hover:bg-green-700 focus:ring-4 focus:outline-none focus:ring-mainColor font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                        Đăng nhập
+                    </button>
+                </form>
+                <form id="dashboard" role="tabpanel" aria-labelledby="dashboard-tab">
+                    <div class="mb-4">
+                        <label for="email"
+                            class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Email</label>
+                        <input type="email" id="email"
+                            class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-1 focus:ring-mainColor focus:border-mainColor block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-mainColor dark:focus:border-mring-mainColor dark:shadow-sm-light"
+                            placeholder="name@flowbite.com" required />
+                    </div>
+                    <div class="mb-4">
+                        <label for="password" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Mật
+                            khẩu</label>
+                        <input type="password" id="password"
+                            class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-1 focus:ring-mainColor focus:border-mainColor block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-mainColor dark:focus:border-mring-mainColor dark:shadow-sm-light"
+                            required />
+                    </div>
+                    <div class="mb-4">
+                        <label for="repeat-password"
+                            class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Nhập lại mật
+                            khẩu</label>
+                        <input type="password" id="repeat-password"
+                            class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-1 focus:ring-mainColor focus:border-mainColor block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-mainColor dark:focus:border-mring-mainColor dark:shadow-sm-light"
+                            required />
+                    </div>
+                    <div class="flex items-start mb-4">
+                        <div class="flex items-center h-5">
+                            <input id="terms" type="checkbox" value=""
+                                class="w-4 h-4 border border-gray-300 bg-gray-50 focus:ring-white focus:border-[1px] focus:text-mainColor text-mainColor rounded dark:bg-gray-700 dark:border-gray-600 dark:focus:ring-blue-600 dark:ring-offset-gray-800 dark:focus:ring-offset-gray-800"
+                                required />
+                        </div>
+                        <label for="terms" class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">I agree
+                            with
+                            the
+                            <a href="#" class="text-mainColor hover:underline dark:text-mring-mainColor">terms and
+                                conditions</a></label>
+                    </div>
+                    <button type="submit"
+                        class="text-white bg-mainColor w-full md:w-auto hover:bg-green-700 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                        Đăng ký
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!--End User toggle -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.5/flowbite.min.js"></script>
     <script src="../js/home.js"></script>
 </body>
 
