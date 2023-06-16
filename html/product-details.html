@@ -88,7 +88,8 @@
                             <img src="../images/user.png" alt="" class="w-4 h-4 md:w-5 md:h-5 cursor-pointer">
                         </li>
                         <li>
-                           <a href="../html/cart.html"><img src="../images/giohang.png" alt="" class="w-4 h-4 md:w-5 md:h-5 cursor-pointer"></a>
+                            <a href="../html/cart.html"><img src="../images/giohang.png" alt=""
+                                    class="w-4 h-4 md:w-5 md:h-5 cursor-pointer"></a>
                         </li>
                         <li class="menu-toggle lg:hidden flex items-center">
                             <i class="fa-solid fa-bars text-[18px] text-mainColor md:text-[22px]"></i>
@@ -175,21 +176,22 @@
                                 <p class="text-mainColor font-normal text-[30px]">256,000 đ</p>
                                 <div class="flex items-center gap-7 mt-5 mb-10">
                                     <p class="font-light text-xl">Số lượng</p>
-                                    <span
+                                    <div id="btn-quantity"
                                         class="text-textColor border-[1px] border-timKiem rounded-md flex items-center">
-                                        <span class="increase text-lg px-3 hover:text-mainColor">
+                                        <span class="increase text-lg px-3 hover:text-mainColor" @click="handleReduce">
                                             <i class="fas fa-minus"></i>
                                         </span>
-                                        <span
-                                            class="number px-8 font-bold text-2xl border-x-[1px] border-timKiem">1</span>
-                                        <span class="reduce text-lg px-3 hover:text-mainColor">
+                                        <span class="number px-8 font-bold text-2xl border-x-[1px] border-timKiem">
+                                            {{ number }}
+                                        </span>
+                                        <span class="reduce text-lg px-3 hover:text-mainColor" @click="handleIncrement">
                                             <i class="fas fa-plus"></i>
                                         </span>
-                                    </span>
+                                    </div>
                                 </div>
                                 <nav class="mb-12">
                                     <a href="../html/cart.html"
-                                        class="text-white text-base bg-mainColor rounded-md py-2 px-3 font-bold">Thêm
+                                        class="text-white text-base bg-mainColor hover:bg-bdBox rounded-md py-2 px-3 font-bold">Thêm
                                         Vào Giỏ Hàng</a>
                                 </nav>
                                 <p class="font-bold text-base">Giới thiệu sản phẩm:</p>
@@ -265,7 +267,8 @@
                                                     Bơ - Mexico
                                                 </p>
                                                 <div class="title text-lg hidden lg:block">
-                                                    <a href="../html/product-details.html" class="flex items-center gap-1 font-medium">Chi Tiết
+                                                    <a href="../html/product-details.html"
+                                                        class="flex items-center gap-1 font-medium">Chi Tiết
                                                         <span><img src="../images/right-arrow.png"></span>
                                                     </a>
                                                 </div>
@@ -333,7 +336,8 @@
                                                     Xoài Myanmar
                                                 </p>
                                                 <div class="title text-lg hidden lg:block">
-                                                    <a href="../html/product-details.html" class="flex items-center gap-1 font-medium">Chi Tiết
+                                                    <a href="../html/product-details.html"
+                                                        class="flex items-center gap-1 font-medium">Chi Tiết
                                                         <span><img src="../images/right-arrow.png"></span>
                                                     </a>
                                                 </div>
@@ -401,7 +405,8 @@
                                                     Táo Mỹ
                                                 </p>
                                                 <div class="title text-lg hidden lg:block">
-                                                    <a href="../html/product-details.html" class="flex items-center gap-1 font-medium">Chi Tiết
+                                                    <a href="../html/product-details.html"
+                                                        class="flex items-center gap-1 font-medium">Chi Tiết
                                                         <span><img src="../images/right-arrow.png"></span>
                                                     </a>
                                                 </div>
@@ -469,7 +474,8 @@
                                                     Cherry Mỹ
                                                 </p>
                                                 <div class="title text-lg hidden lg:block">
-                                                    <a href="../html/product-details.html" class="flex items-center gap-1 font-medium">Chi Tiết
+                                                    <a href="../html/product-details.html"
+                                                        class="flex items-center gap-1 font-medium">Chi Tiết
                                                         <span><img src="../images/right-arrow.png"></span>
                                                     </a>
                                                 </div>
@@ -537,7 +543,8 @@
                                                     Vải Thiều - Trung Quốc
                                                 </p>
                                                 <div class="title text-lg hidden lg:block">
-                                                    <a href="../html/product-details.html" class="flex items-center gap-1 font-medium">Chi Tiết
+                                                    <a href="../html/product-details.html"
+                                                        class="flex items-center gap-1 font-medium">Chi Tiết
                                                         <span><img src="../images/right-arrow.png"></span>
                                                     </a>
                                                 </div>
@@ -605,7 +612,8 @@
                                                     Xoài Myanmar
                                                 </p>
                                                 <div class="title text-lg hidden lg:block">
-                                                    <a href="../html/product-details.html" class="flex items-center gap-1 font-medium">Chi Tiết
+                                                    <a href="../html/product-details.html"
+                                                        class="flex items-center gap-1 font-medium">Chi Tiết
                                                         <span><img src="../images/right-arrow.png"></span>
                                                     </a>
                                                 </div>
@@ -673,7 +681,8 @@
                                                     Heathy Vitamin C
                                                 </p>
                                                 <div class="title text-lg hidden lg:block">
-                                                    <a href="../html/product-details.html" class="flex items-center gap-1 font-medium">Chi Tiết
+                                                    <a href="../html/product-details.html"
+                                                        class="flex items-center gap-1 font-medium">Chi Tiết
                                                         <span><img src="../images/right-arrow.png"></span>
                                                     </a>
                                                 </div>
@@ -741,7 +750,8 @@
                                                     Dương Đào
                                                 </p>
                                                 <div class="title text-lg hidden lg:block">
-                                                    <a href="../html/product-details.html" class="flex items-center gap-1 font-medium">Chi Tiết
+                                                    <a href="../html/product-details.html"
+                                                        class="flex items-center gap-1 font-medium">Chi Tiết
                                                         <span><img src="../images/right-arrow.png"></span>
                                                     </a>
                                                 </div>
@@ -809,7 +819,8 @@
                                                     Bơ - Mexico
                                                 </p>
                                                 <div class="title text-lg hidden lg:block">
-                                                    <a href="../html/product-details.html" class="flex items-center gap-1 font-medium">Chi Tiết
+                                                    <a href="../html/product-details.html"
+                                                        class="flex items-center gap-1 font-medium">Chi Tiết
                                                         <span><img src="../images/right-arrow.png"></span>
                                                     </a>
                                                 </div>
@@ -877,7 +888,8 @@
                                                     Thanh Long Vàng
                                                 </p>
                                                 <div class="title text-lg hidden lg:block">
-                                                    <a href="../html/product-details.html" class="flex items-center gap-1 font-medium">Chi Tiết
+                                                    <a href="../html/product-details.html"
+                                                        class="flex items-center gap-1 font-medium">Chi Tiết
                                                         <span><img src="../images/right-arrow.png"></span>
                                                     </a>
                                                 </div>
@@ -1117,6 +1129,8 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.5/flowbite.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src="../js/vue.js"></script>
     <script src="../js/index.js"></script>
     <script src="../js/home.js"></script>
 </body>
